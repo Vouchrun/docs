@@ -1,30 +1,26 @@
 import DefaultTheme from 'vitepress/theme';
-import { onMounted, watch, nextTick } from 'vue';
 import { useRoute } from 'vitepress';
-import mediumZoom from 'medium-zoom';
-import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client';
+import 'viewerjs/dist/viewer.min.css';
+import imageViewer from 'vitepress-plugin-image-viewer';
+import vImageViewer from 'vitepress-plugin-image-viewer/lib/vImageViewer.vue';
 //import { Steps, Tab, Tabs } from 'nextra-theme-docs';
 
 import './index.css';
 
 export default {
   ...DefaultTheme,
-
+  enhanceApp(ctx) {
+    DefaultTheme.enhanceApp(ctx);
+    // Register global components, if you don't want to use it, you don't need to add it
+    ctx.app.component('vImageViewer', vImageViewer);
+    // ...
+  },
   setup() {
     const route = useRoute();
-    const initZoom = () => {
-    //   mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-      mediumZoom('.main img', { background: 'var(--vp-c-bg)' });
-    };
-    onMounted(() => {
-      initZoom();
-    });
-    watch(
-      () => route.path,
-      () => nextTick(() => initZoom())
-    );
+    imageViewer(route);
   },
   enhanceApp({ app }) {
-  enhanceAppWithTabs(app)
-  }
+    enhanceAppWithTabs(app);
+  },
 };
