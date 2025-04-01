@@ -52,3 +52,4 @@ TX Limit Exempt | `0xADDRESSES`  | Vouch Ecosystem related addresses are Exempt
 Dividend Exempt | `0xADDRESSES`  | Vouch Ecosystem related addresses are Exempt 
 
 To understand how VOUCH token interacts with the wider Vouch Ecosystem refer to the [Vouch Ecosystem](/docs/introduction/Vouch_Ecosystem.html) section.
+ 
