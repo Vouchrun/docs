@@ -74,6 +74,8 @@ function docs(){
         {text: "Intro to LSDs", link: "/docs/introduction/intro_to_LSD"},
         {text: "Vouch Overview", link: "/docs/introduction/vouch_overview"},
         {text: "vPLS (LST) Token", link: "/docs/introduction/vPLS_Token"},
+        {text: "VOUCH Token", link: "/docs/introduction/VOUCH_Token"},
+        {text: "Vouch Ecosystem", link: "/docs/introduction/Vouch_Ecosystem"},
     ]
     },
     {
