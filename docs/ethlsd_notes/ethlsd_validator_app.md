@@ -134,7 +134,7 @@ PLS LSD Validator App is a user interface where node operators can participate i
   "docLinks": {
     // doc links in Pool page
     "ejectionMechanism": "https://commonwealth.im/stafi/discussion/10127-withdrawal-design-for-reth-solution-for-upcoming-shanghai-upgrade", // doc link of Ejection Mechanism
-    "delegationMechanism": "https://lsaas-docs.stafi.io/docs/vouch_ecosystem/components/validator.html" // doc link of Delegation Mechanism
+    "delegationMechanism": "https://lsaas-docs.stafi.io/docs/ethlsd_notes/components/validator.html" // doc link of Delegation Mechanism
   }
 }
 ```

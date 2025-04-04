@@ -7,7 +7,7 @@ The Vouch Ecosystem can be broadly defined as a set of protcols which make up a 
 
 [2. VOUCH Token & Distribution Layer](/docs/vouch_ecosystem/VOUCH_Distributor.html) contracts and services.
 
-[3. Vouch DAO Governance Protocol](/docs/vouch_ecosystem/vouch_DAO.html) comprising Staking, Delegation and Voting
+[3. Vouch DAO Governance Protocol](/docs/vouch_ecosystem/Vouch_DAO.html) comprising Staking, Delegation and Voting
 
 ![Vouch Ecosystem](/image/VouchEcosystem.png 'Vouch Ecosystem')
 
@@ -46,4 +46,4 @@ Read more about the [VOUCH Token & Distribution Layer](/docs/vouch_ecosystem/VOU
 
 ### Phase 3 - Vouch DAO (Intial Development Stage)
 
-Read more about the [Vouch DAO](/docs/vouch_ecosystem/vouch_DAO.html) here.
+Read more about the [Vouch DAO](/docs/vouch_ecosystem/Vouch_DAO.html) here.
