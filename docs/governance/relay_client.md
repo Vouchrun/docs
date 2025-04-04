@@ -2,7 +2,7 @@
 
 `pls-lsd-relay` is an off-chain relay service responsible for interacting with Vouch LSD contracts, synchronising blocks and events, handling tasks related to validators and balances, and other off-chain operations.
 
-For more inforamtion on the Relayer role refer to the [Relay](/docs/architecture/components/relay) component documentation. 
+For more inforamtion on the Relayer role refer to the [Relay](/docs/vouch_ecosystem/components/relay) component documentation. 
 
 ## Relay Client Preperation
 
@@ -168,7 +168,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 Add the repository to Apt sources:
 ```sh
 echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  "deb [arch=$(dpkg --print-vouch_ecosystem) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
