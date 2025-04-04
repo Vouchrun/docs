@@ -146,7 +146,7 @@ $ cp conf.template.toml ~/eth-stack/config.toml
 
 ## Config eth relay service
 
-Update config (config.toml) by your favorite editor according to [Relay Config](./relay.html#config)
+Update config (config.toml) by your favorite editor according to [Relay Config](/docs/ethlsd_notes/relay)
 
 ```toml
 account = "0x68146ebA486CE6F8D22731c8ECB4d013F34E7114"

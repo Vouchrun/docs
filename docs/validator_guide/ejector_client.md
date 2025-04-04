@@ -82,7 +82,7 @@ Add the repository to Apt sources:
 ```sh
 echo \
 
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  "deb [arch=$(dpkg --print-vouch_ecosystem) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
 
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
 

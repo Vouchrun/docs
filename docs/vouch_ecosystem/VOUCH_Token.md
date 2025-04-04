@@ -2,10 +2,10 @@
 
 ## What is the VOUCH token
 
-Phase 2 of the Vouch Ecosystem deployment introduces the VOUCH token. VOUCH token is the Vouch protocol's future governance token, and gives power to the community in determining; 1) the path of the protocol 2) setting any configurable parameters. In addtion to governace rights, the VOUCH token seeks to capture value generated in the protocol and fuel growth of the ecosystem by:
+VOUCH token is the Vouch protocol's future governance token, and gives power to the community in determining; 1) the path of the protocol 2) setting any configurable parameters. In addtion to governace rights, the VOUCH token seeks to capture value generated in the protocol and fuel growth of the ecosystem by:
 - Funding additional Vouch Community Validators (which stream more PLS into the ecosystem)
 - Bolster Liquidity of both vPLS and VOUCH token in various LP pools
-- Provide a secondary PLS stream for the [Vouch Ecosystem](/docs/introduction/Vouch_Ecosystem.html) in the way of token fees.
+- Provide a secondary PLS stream for the [Vouch Ecosystem](/docs/vouch_ecosystem/Ecosystem_Overview.html) in the way of token fees.
 
 ## Goals of the VOUCH token
 
@@ -51,5 +51,5 @@ Fee Exempt | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt
 TX Limit Exempt | `0xADDRESSES`  | Vouch Ecosystem related addresses are Exempt 
 Dividend Exempt | `0xADDRESSES`  | Vouch Ecosystem related addresses are Exempt 
 
-To understand how VOUCH token interacts with the wider Vouch Ecosystem refer to the [Vouch Ecosystem](/docs/introduction/Vouch_Ecosystem.html) section.
+To understand how VOUCH token interacts with the wider Vouch Ecosystem refer to the [Vouch Ecosystem](/docs/vouch_ecosystem/Ecosystem_Overview.html) section.
  

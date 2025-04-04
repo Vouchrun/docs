@@ -68,7 +68,7 @@ features:
     details: Understanding Vouch LSD Protocol in 9 minutes! 
     link: /docs/introduction/vouch_overview
   #   details: Learn what Liquid Staking Derivatives and Liquid Staking Tokens are.
-  #   link: /docs/architecture/ethlsd
+  #   link: /docs/vouch_ecosystem/ethlsd
   # - title: User Staking Guide
   #   details: Learn How Stake your PLS to get vPLS tokens, and earn some Pulsechain Yield.
   #   link: /docs/coming_soon

@@ -26,7 +26,7 @@
 #### Exiting a Validator
  
 
-## Architecture/Develop
+## vouch_ecosystem/Develop
 ### Overview/Getstarted docs
 ### PLS LSD Stack
 ### Modules

@@ -73,10 +73,7 @@ function docs(){
       items: [
         {text: "Intro to LSDs", link: "/docs/introduction/intro_to_LSD"},
         {text: "Vouch Overview", link: "/docs/introduction/vouch_overview"},
-        {text: "vPLS (LST) Token", link: "/docs/introduction/vPLS_Token"},
-        {text: "VOUCH Token", link: "/docs/introduction/VOUCH_Token"},
-        {text: "Vouch Ecosystem", link: "/docs/introduction/Vouch_Ecosystem"},
-    ]
+        ]
     },
     {
       text: "User Guide", //https://github.com/stafiprotocol/docs/tree/main/pages/stakingeth
@@ -113,35 +110,26 @@ function docs(){
             // }
           ]
         },
+      {
+        text: "Vouch Ecosystem",
+        collapsed: false,
+        items: [
+          {text: "Ecosystem Overview", link: "/docs/vouch_ecosystem/Ecosystem_Overview"},
+          {text: "Vouch LSD Protool", link: "/docs/vouch_ecosystem/vouch_lsd"},
+          {text: "vPLS (LST) Token", link: "/docs/vouch_ecosystem/vPLS_Token"},
+          {text: "VOUCH & Distributor", link: "/docs/vouch_ecosystem/VOUCH_Distributor"},
+          {text: "VOUCH Token", link: "/docs/vouch_ecosystem/VOUCH_Token"},
+          {text: "Vouch DAO", link: "/docs/vouch_ecosystem/Vouch_DAO"},
+          ]
+        },
         {
           text: "Governance",
           collapsed: true,
           items: [
             // {text: "Introduction", link: "/docs/governance/introduction"},
             // {text: "VOUCH Token", link: "/docs/governance/vouch_token"},
+            {text: "Relay", link: "/docs/governance/relay"},
             {text: "Relay Client (Voter)", link: "/docs/governance/relay_client"},
-          ]
-        },
-      {
-        text: "Architecture",
-        collapsed: true,
-        items: [
-          {text: "Vouch LSD Protool", link: "/docs/architecture/vouch_lsd"},
-          {
-          text: "Components",
-            collapsed: false,
-            items: [
-          //       {text: "Get Started", link: "/docs/architecture/components/getstarted"},
-          //       {text: "Contracts", link: "/docs/architecture/components/contract"},
-                {text: "Relay", link: "/docs/architecture/components/relay"},
-          //       {text: "Validator", link: "/docs/architecture/components/validator"},
-          //       {text: "Ejector", link: "/docs/architecture/components/ejector"},
-          //       {text: "App", link: "/docs/architecture/components/ethlsdapp"},
-          //       {text: "Validator App", link: "/docs/architecture/components/ethlsd_validator_app"},
-          //       {text: "Deploy", link: "/docs/architecture/components/deploy"},
-          //       {text: "Point System", link: "/docs/architecture/components/point_system"},
-              ]
-            }
           ]
         },
         {
@@ -152,6 +140,21 @@ function docs(){
             {text: "Audits", link: "/docs/downloads/audits/"},
           ]
         },
+        // {
+        //   text: "Old ethLSD Notes",
+        //     collapsed: false,
+        //     items: [
+        //         {text: "Get Started", link: "/docs/ethlsd_notes/getstarted"},
+        //         {text: "Contracts", link: "/docs/ethlsd_notes/contract"},
+        //        {text: "Relay", link: "/docs/ethlsd_notes/relay"},
+        //         {text: "Validator", link: "/docs/ethlsd_notes/validator"},
+        //         {text: "Ejector", link: "/docs/ethlsd_notes/ejector"},
+        //         {text: "App", link: "/docs/ethlsd_notes/ethlsdapp"},
+        //         {text: "Validator App", link: "/docs/ethlsd_notes/ethlsd_validator_app"},
+        //         {text: "Deploy", link: "/docs/ethlsd_notes/deploy"},
+        //         {text: "Point System", link: "/docs/ethlsd_notes/point_system"},
+        //       ]
+        //     },
     {
       text: "Terms of Use",
       link: "/docs/terms/terms.md"
