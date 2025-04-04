@@ -74,7 +74,7 @@ At a new checkpoint, the voters will collectively create a true snapshot of the 
 
 Once the tree is submitted, voters will submit the merkle root of this checkpoint in NetworkWithdraw, then node providers are able to claim their rewards in PLS with proof by calling the contract.
 
-![Node Claim Flow](/image/userdepositflow.png 'Node Claim Flow')
+![Node Claim Flow](/image/nodeclaimflow.png 'Node Claim Flow')
 
 ## Relays
 
