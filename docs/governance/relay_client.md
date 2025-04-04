@@ -2,7 +2,7 @@
 
 `pls-lsd-relay` is an off-chain relay service responsible for interacting with Vouch LSD contracts, synchronising blocks and events, handling tasks related to validators and balances, and other off-chain operations.
 
-For more inforamtion on the Relayer role refer to the [Relay](/docs/ethlsd_notes/components/relay) component documentation. 
+For more inforamtion on the Relayer role refer to the [Relay](/docs/governance/relay) component documentation. 
 
 ## Relay Client Preperation
 
