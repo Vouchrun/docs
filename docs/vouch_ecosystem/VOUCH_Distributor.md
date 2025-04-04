@@ -67,6 +67,7 @@ Voters (PLS)  | 0.25% | Funds Gas for Relay Services
 **`PLS Rewards Distributor`** | 0% | See PLS Reward Distribution Table  |
 
 
+
 ### Distributor Layer Flow Digram (example figures)
 ![Distributor Flow Digram](/image/DAO_Distribution.png 'Distributor Flow Digram')
 
