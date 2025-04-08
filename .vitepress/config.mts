@@ -8,7 +8,7 @@ import elk from "elkjs";
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
   title: "Liquid Staking",
-  description: "Liquid Staking Derivatives on Pulsechain",
+  description: "Liquid Staking on Pulsechain",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/image/logo.svg',
@@ -16,7 +16,7 @@ export default withMermaid(defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Guides', link: '/docs/introduction/getstarted' },
       //{ text: 'Website', link: 'https://vouch.run' },
-      { text: 'Launch User App', link: 'https://app.vouch.run' },
+      { text: 'Join Our Telegram', link: 'https://t.me/vouchrun/' },
     ],
      sidebar: {
       "/docs/": docs(),
@@ -29,7 +29,9 @@ export default withMermaid(defineConfig({
       // label: 'Contents',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vouchrun/' }
+      { icon: 'github', link: 'https://github.com/vouchrun/' },
+      { icon: 'twitter', link: 'https://x.com/vouchlsd' },
+      //{ icon: 'telegram', link: 'https://t.me/vouchrun/' } // https://vitepress.dev/reference/default-theme-config#sociallinks
     ],
   },
   markdown: {

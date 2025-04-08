@@ -50,12 +50,6 @@ features:
     details: This guide is a living document, more information will be added regularly.
     link: /docs/introduction/intro_to_LSD
   - icon:
-     src: /image/TGLogo.svg
-     width: 82
-    title: Visit our Telegram Group
-    details: Be part of the Vouch Community and stay in touch with the latest news and updates.
-    link: https://t.me/vouchrun  # - title: Introduction to LSDs
-  - icon:
       src: /image/video1.png
       width: 150
     title: Learn about Liquid Staking
@@ -67,17 +61,26 @@ features:
     title: Understanding Vouch LSD
     details: Understanding Vouch LSD Protocol in 9 minutes! 
     link: /docs/introduction/vouch_overview
-  #   details: Learn what Liquid Staking Derivatives and Liquid Staking Tokens are.
-  #   link: /docs/vouch_ecosystem/ethlsd
-  # - title: User Staking Guide
-  #   details: Learn How Stake your PLS to get vPLS tokens, and earn some Pulsechain Yield.
-  #   link: /docs/coming_soon
-  # - title: Validator Staking Guide
-  #   details: Get your Pulsechain Validator up and running on the Vouch Protocol.
-  #   link: /docs/coming_soon
-  # - title: What is VOUCH Token 
-  #   details: VOUCH is the platform goverance token of the Vouch protocol.  
-  #   link: /docs/coming_soon
+  - icon:
+     src: /image/VouchEcosystem.png
+     width: 150
+    title: Intro to the Vouch Ecosystem
+    details: Lean how the Vouch Ecosystem works for you.
+    link: /docs/vouch_ecosystem/Ecosystem_Overview 
+  - icon:
+     light: /image/dex-screener-vPLS-light.svg
+     dark: /image/dex-screener-vPLS-dark.svg
+     width: 280
+    title: vPLS on Dexscreener
+    details: View the PulseX vPLS/PLS pair on Dexscreener.
+    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797
+  - icon:
+     light: /image/dex-screener-VOUCH-light.svg
+     dark: /image/dex-screener-VOUCH-dark.svg
+     width: 280
+    title: VOUCH on Dexscreener (launching soon)
+    details: View the PulseX VOUCH/PLS pair on Dexscreener.
+    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797  
 
 ---
 
