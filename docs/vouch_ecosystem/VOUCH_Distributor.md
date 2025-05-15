@@ -1,4 +1,4 @@
-# VOUCH and DAO Distirbutor Layer
+# VOUCH and DAO Distribution Layer
 
 ::: warning 
 Settings and values are preliminary and subject to change prior to launch of VOUCH token. 
@@ -25,7 +25,7 @@ In additon to the above Validator earned Rewards, the Vouch token has the abilit
 |--|:--:|--|
 VOUCH Buy Fee | 5% | Configurable setting of 0-10%
 VOUCH Sell Fee | 5% | Configurable setting of 0-10%
-VOUCH TX Fee | True | When set Buy Fee applys to transfers
+VOUCH TX Fee | True | When set Buy Fee applies to transfers
 
 
 ## Distribution Layer Diagram
