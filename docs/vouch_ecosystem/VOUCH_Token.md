@@ -44,7 +44,7 @@ VOUCH token is the Vouch protocol's future governance token, and gives power to 
 |--|:--:|--|
 VOUCH Buy Fee | 5% | Configurable setting of 0-10%
 VOUCH Sell Fee | 5% | Configurable setting of 0-10%
-VOUCH TX Fee | True | When set Buy Fee applys to transfers
+VOUCH TX Fee | True | When set Buy Fee applies to transfers
 VOUCH TX Limit |  1,000,000,000 (1% Supply)  | Set to 100,000,000 (0.1% Supply) 1st 14 Days of Launch
 Swapback Threshold |1,000 | VOUCH accumulated from Fees to trigger Swap Back.
 Fee Exempt | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt 
