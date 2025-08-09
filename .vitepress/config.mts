@@ -14,7 +14,7 @@ export default withMermaid(defineConfig({
     logo: '/image/logo.svg',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Guides', link: '/docs/introduction/getstarted' },
+      { text: 'Dashboard', link: 'https://dash.vouch.run/' },
       //{ text: 'Website', link: 'https://vouch.run' },
       { text: 'Join Our Telegram', link: 'https://t.me/vouchrun/' },
     ],

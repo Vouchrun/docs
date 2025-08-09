@@ -30,17 +30,20 @@ hero:
     #   text: Get Started
     #   link: /docs/introduction/getstarted
     - theme: brand
-      text: User App
+      text: Staking App
       link: https://app.vouch.run
-    - theme: alt
-      text: IPFS User App
-      link: https://dweb.link/ipfs/bafybeibu5yyi67xr4k3crl4yrqfmyl7n4jdst444lsec5rmwj7doiybfuy
+    # - theme: alt
+    #   text: IPFS User App
+    #   link: https://dweb.link/ipfs/bafybeibu5yyi67xr4k3crl4yrqfmyl7n4jdst444lsec5rmwj7doiybfuy
     - theme: brand
       text: Validator App
       link: https://val.vouch.run
-    - theme: alt
-      text: IPFS Validator App
-      link: https://dweb.link/ipfs/bafybeiafloun5633e7v7gilkk37ynyl32ydqm5zpgdlmscdcusfbctzdk4
+    # - theme: alt
+    #   text: IPFS Validator App
+    #   link: https://dweb.link/ipfs/bafybeiafloun5633e7v7gilkk37ynyl32ydqm5zpgdlmscdcusfbctzdk4
+    - theme: brand
+      text: VOUCH Dashboard
+      link: https://dash.vouch.run
 features:
   - icon:
      light: /image/book.svg
@@ -49,6 +52,20 @@ features:
     title: Vouch Protocol Docs
     details: This guide is a living document, more information will be added regularly.
     link: /docs/introduction/intro_to_LSD
+  - icon:
+     light: /image/dex-screener-vPLS-light.svg
+     dark: /image/dex-screener-vPLS-dark.svg
+     width: 280
+    title: vPLS on Dexscreener
+    details: View the PulseX vPLS/PLS pair on Dexscreener.
+    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797
+  - icon:
+     light: /image/dex-screener-VOUCH-light.svg
+     dark: /image/dex-screener-VOUCH-dark.svg
+     width: 280
+    title: VOUCH on Dexscreener (launching soon)
+    details: View the PulseX VOUCH/PLS pair on Dexscreener.
+    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797 
   - icon:
       src: /image/video1.png
       width: 150
@@ -66,21 +83,7 @@ features:
      width: 150
     title: Intro to the Vouch Ecosystem
     details: Lean how the Vouch Ecosystem works for you.
-    link: /docs/vouch_ecosystem/Ecosystem_Overview 
-  - icon:
-     light: /image/dex-screener-vPLS-light.svg
-     dark: /image/dex-screener-vPLS-dark.svg
-     width: 280
-    title: vPLS on Dexscreener
-    details: View the PulseX vPLS/PLS pair on Dexscreener.
-    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797
-  - icon:
-     light: /image/dex-screener-VOUCH-light.svg
-     dark: /image/dex-screener-VOUCH-dark.svg
-     width: 280
-    title: VOUCH on Dexscreener (launching soon)
-    details: View the PulseX VOUCH/PLS pair on Dexscreener.
-    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797  
+    link: /docs/vouch_ecosystem/Ecosystem_Overview  
 
 ---
 
