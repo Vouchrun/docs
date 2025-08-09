@@ -68,13 +68,13 @@ features:
     link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797 
   - icon:
       src: /image/video1.png
-      width: 150
+      width: 190
     title: Learn about Liquid Staking
     details: Introduction to liquid staking on Pulsechain in 6 minutes!
     link: /docs/introduction/intro_to_LSD
   - icon:
       src: /image/video2.png
-      width: 150
+      width: 200
     title: Understanding Vouch LSD
     details: Understanding Vouch LSD Protocol in 9 minutes! 
     link: /docs/introduction/vouch_overview
