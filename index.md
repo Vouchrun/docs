@@ -30,7 +30,7 @@ hero:
     #   text: Get Started
     #   link: /docs/introduction/getstarted
     - theme: brand
-      text: Staking App
+      text: Stake PLS
       link: https://app.vouch.run
     # - theme: alt
     #   text: IPFS User App
@@ -42,8 +42,11 @@ hero:
     #   text: IPFS Validator App
     #   link: https://dweb.link/ipfs/bafybeiafloun5633e7v7gilkk37ynyl32ydqm5zpgdlmscdcusfbctzdk4
     - theme: brand
-      text: VOUCH Dashboard
+      text: Dashboard
       link: https://dash.vouch.run
+    - theme: brand
+      text: Buy VOUCH
+      link: https://pulseswap.io/?chain=pulsechain&from=0x0000000000000000000000000000000000000000&to=0x43B09d304F48b6278ACB0666f17409b70bd17f68 
 features:
   - icon:
      light: /image/book.svg
@@ -55,17 +58,17 @@ features:
   - icon:
      light: /image/dex-screener-vPLS-light.svg
      dark: /image/dex-screener-vPLS-dark.svg
-     width: 280
+     width: 300
     title: vPLS on Dexscreener
     details: View the PulseX vPLS/PLS pair on Dexscreener.
     link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797
   - icon:
      light: /image/dex-screener-VOUCH-light.svg
      dark: /image/dex-screener-VOUCH-dark.svg
-     width: 280
-    title: VOUCH on Dexscreener (launching soon)
+     width: 300
+    title: VOUCH on Dexscreener
     details: View the PulseX VOUCH/PLS pair on Dexscreener.
-    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797 
+    link: https://dexscreener.com/pulsechain/0x43B09d304F48b6278ACB0666f17409b70bd17f68 
   - icon:
       src: /image/video1.png
       width: 190
