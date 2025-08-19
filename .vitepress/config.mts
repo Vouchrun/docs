@@ -29,7 +29,8 @@ export default withMermaid(defineConfig({
       // label: 'Contents',
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vouchrun/' }
+      { icon: 'github', link: 'https://github.com/vouchrun/' },
+      { icon: 'twitter', link: 'https://x.com/vouchLSD/' }
     ],
   },
   markdown: {
