@@ -26,9 +26,6 @@ hero:
     width: 400
     alt: Vouch LSD Protocol
   actions:
-    # - theme: brand
-    #   text: Get Started
-    #   link: /docs/introduction/getstarted
     - theme: brand
       text: Stake PLS
       link: https://app.vouch.run
@@ -44,9 +41,13 @@ hero:
     - theme: brand
       text: Dashboard
       link: https://dash.vouch.run
-    - theme: brand
-      text: Buy VOUCH
-      link: https://pulseswap.io/?chain=pulsechain&from=0x0000000000000000000000000000000000000000&to=0x43B09d304F48b6278ACB0666f17409b70bd17f68 
+    # - theme: brand
+    #   text: Buy VOUCH
+    #   link: https://pulseswap.io/?chain=pulsechain&from=0x0000000000000000000000000000000000000000&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f
+    - theme: alt
+      text:  VOUCH TOKEN LAUNCHING SOON!
+      link: /docs/introduction/VOUCH_Token_Launch
+
 features:
   - icon:
      light: /image/book.svg
@@ -68,7 +69,7 @@ features:
      width: 300
     title: VOUCH on Dexscreener
     details: View the PulseX VOUCH/PLS pair on Dexscreener.
-    link: https://dexscreener.com/pulsechain/0x43B09d304F48b6278ACB0666f17409b70bd17f68 
+    link: https://dexscreener.com/pulsechain/0x801C369cB1443c087Cd327DfB53AECf378F6ff85
   - icon:
       src: /image/video1.png
       width: 190

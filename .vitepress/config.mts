@@ -75,19 +75,14 @@ function docs(){
       items: [
         {text: "Intro to LSDs", link: "/docs/introduction/intro_to_LSD"},
         {text: "Vouch Overview", link: "/docs/introduction/vouch_overview"},
+        {text: "VOUCH Token Launch", link: "/docs/introduction/VOUCH_Token_Launch"},        
         ]
     },
     {
-      text: "User Guide", //https://github.com/stafiprotocol/docs/tree/main/pages/stakingeth
+      text: "User Guide",
       collapsed: false,
         items: [
            {text: "User App Intro", link: "/docs/user_guide/user_staking_intro"},
-    //     {text: "Pulsechain Staking", link: "/docs/userguide/plsstaking"},
-    //     {text: "How Vouch Staked PLS works", link: "/docs/userguide/frontend"},
-    //     {text: "The vPLS token", link: "/docs/userguide/frontend"},
-    //     {text: "How to stake PLS", link: "/docs/userguide/frontend"},
-    //     {text: "How to unstake PLS", link: "/docs/userguide/frontend"},
-    //     {text: "Liquidity Mining", link: "/docs/userguide/frontend"},
           ]
     },
 
@@ -100,16 +95,6 @@ function docs(){
             {text: "pulse-staking-deposit-cli", link: "/docs/validator_guide/pulse-staking-deposit-cli"},
             {text: "Ejector Client", link: "/docs/validator_guide/ejector_client"},
             {text: "Exiting a Validator", link: "/docs/validator_guide/exiting_validators"},
-            // {
-            //   text: "Validator Staking",
-            //   collapsed: false,
-            //   items: [
-            //     {text: "Validator Staking Steps", link: "/docs/validator_guide/validator_staking_guide"},
-            //     {text: "pulse-staking-deposit-cli", link: "/docs/validator_guide/pulse-staking-deposit-cli"},
-            //     {text: "Ejector Client", link: "/docs/validator_guide/ejector_client"},
-            //     {text: "Exiting a Validator", link: "/docs/validator_guide/exiting_validators"}
-            //   ]
-            // }
           ]
         },
       {
@@ -142,33 +127,11 @@ function docs(){
             {text: "Audits", link: "/docs/downloads/audits/"},
           ]
         },
-        // {
-        //   text: "Old ethLSD Notes",
-        //     collapsed: false,
-        //     items: [
-        //         {text: "Get Started", link: "/docs/ethlsd_notes/getstarted"},
-        //         {text: "Contracts", link: "/docs/ethlsd_notes/contract"},
-        //        {text: "Relay", link: "/docs/ethlsd_notes/relay"},
-        //         {text: "Validator", link: "/docs/ethlsd_notes/validator"},
-        //         {text: "Ejector", link: "/docs/ethlsd_notes/ejector"},
-        //         {text: "App", link: "/docs/ethlsd_notes/ethlsdapp"},
-        //         {text: "Validator App", link: "/docs/ethlsd_notes/ethlsd_validator_app"},
-        //         {text: "Deploy", link: "/docs/ethlsd_notes/deploy"},
-        //         {text: "Point System", link: "/docs/ethlsd_notes/point_system"},
-        //       ]
-        //     },
+
     {
       text: "Terms of Use",
       link: "/docs/terms/terms.md"
     },
-    // {
-    //   text: "Concepts",
-    //   collapsed: false,
-    //   items: [
-    //     {text: "Ethereum Staking", link: "/docs/concepts/ethstaking"},
-    //     {text: "LSD & LST", link: "/docs/concepts/lstlsd"},
-    //   ]
-    // },
   ]
 }
 

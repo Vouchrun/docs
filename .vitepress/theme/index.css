@@ -23,12 +23,14 @@ figcaption {
   --vp-c-text-2: #7D794F;              /* Secondary text (captions, metadata) */
   --vp-c-text-3: #7D794F;              /* Tertiary text (very subtle elements, disabled states) */
   --vp-c-bg-alt: #F3F3EC;               /* Sidebar background */
-  --vp-c-brand-1: #FF8533;
+  --vp-c-brand-1: #FF8533;              /* menu headings font color */
   --vp-c-brand-2: #4F8CEF;
-  --vp-c-brand-3: #FF8533;
+  --vp-c-brand-3: #FF8533;                /* brand button color*/
   --vp-c-default-3: #FF8533;
   --vp-c-default-2: #4F8CEF;
   --vp-c-bg-soft: #F3F3EC;              /* Slightly darker/lighter background for cards/sections */
+  --vp-button-alt-bg: #4F8CEF;          /* alt button color*/
+  --vp-button-alt-text: #ffffff;          /* alt button text color*/
 }
 
 .dark {
