@@ -49,7 +49,8 @@ VOUCH and the associated contracts have already been deployed on pulsechain main
 - Primary VOUCH/WPLS Pool on PulseX v2:  `0x801C369cB1443c087Cd327DfB53AECf378F6ff85`
 
 
-:::danger **Stay Safe and only Use links from offical sources.** 
+:::warning 
+**Stay safe out there, only use links from official or trusted sources.** 
 :::
 
 ## Official Links
