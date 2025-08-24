@@ -35,7 +35,7 @@ However before running the client you need to choose which way you would like to
 | GasPriceMultiplier         | Increase Gas by Factor of, overcomes gas spikes                                                                                                                                                                     | 2.5                         |
 | batchRequestBlocksNumber   | a number which limits concurrent requests on Beacon chain, due to the design of Beacon chain RPC                                                                                                                    | 16 (32 Max)                 |
 | eventFilterMaxSpanBlocks   | Determines number of blocks to fetch in a request when syncing relay client                                                                                                                                         | 100000                      |
-| maxEjectedValPerCycle      | Max number of validators to elect to exit in a single request, prevents exceeding `gasLimit`                                                                                                                        | 100                        |
+| maxEjectedValPerCycle      | Max number of validators to elect to exit in a single request, prevents exceeding `gasLimit`                                                                                                                        | 100                         |
 | runForEntrustedLsdNetwork  | set this config to true only if you are one of the entrusted voters who are responsible to relay data for entrusted LSD networks                                                                                    | false                       |
 
 
@@ -79,7 +79,7 @@ trustNodeDepositAmount     = 1000000  # PLS
 eth2EffectiveBalance       = 32000000 # PLS
 maxPartialWithdrawalAmount = 8000000  # PLS
 gasLimit = "3000000"
-maxGasPrice = "20000000"              #Gwei
+maxGasPrice = "40000000"              #Gwei
 GasPriceMultiplier = 2.5
 batchRequestBlocksNumber = 16
 eventFilterMaxSpanBlocks = 100000
@@ -104,6 +104,11 @@ eth2 = "http://localhost:5052"
 [[endpoints]]
 eth1 = "https://rpc-pulsechain.g4mm4.io"
 eth2 = "https://rpc-pulsechain.g4mm4.io/beacon-api/"
+
+eth1 = "https://rpc.pulsechain.com"
+eth2 = "http://localhost:5052"       # If running local beacon RPC
+
+
 ```
 
 == Testnet
@@ -117,6 +122,7 @@ gasLimit = "3000000"
 maxGasPrice = "1200"                  #Gwei
 GasPriceMultiplier = 2.5
 batchRequestBlocksNumber = 16
+eventFilterMaxSpanBlocks = 100000
 runForEntrustedLsdNetwork = false
 
 [pinata]
@@ -248,9 +254,8 @@ sudo docker rm relay
 ```
 **Run relay with prompt for password**
 ```sh
-sudo docker run --pull always --name relay -it -e KEYSTORE_PASSWORD --restart unless-stopped -v "/blockchain/relay":/keys ghcr.io/vouchrun/pls-lsd-relay:main start --base-path /keys
+sudo docker run --pull always --name relay -it -e KEYSTORE_PASSWORD --restart unless-stopped --network=host -v "/blockchain/relay":/blockchain/relay ghcr.io/vouchrun/pls-lsd-relay:main start --base-path /blockchain/relay
 ```
-
 == Start in detached mode
 
 - Runs docker container in deatched mode and prompts for password at startup
@@ -264,7 +269,7 @@ sudo docker rm relay
 
 **Run relay with prompt for password**
 ```sh
-read -s -p "Enter keystore password: " KEYSTORE_PASSWORD && docker run --pull always --name relay -d -e "KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD" --restart unless-stopped -v "/blockchain/relay/testnet":/keys ghcr.io/vouchrun/pls-lsd-relay:main start --base-path /keys
+read -s -p "Enter keystore password: " KEYSTORE_PASSWORD && docker run --pull always --name relay -d -e "KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD" --restart unless-stopped -v "/blockchain/relay":/blockchain/relay ghcr.io/vouchrun/pls-lsd-relay:main start --base-path /blockchain/relay
 ```
 :::
 

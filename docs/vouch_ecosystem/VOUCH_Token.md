@@ -19,17 +19,17 @@ VOUCH token is the Vouch protocol's future governance token, and gives power to 
   - Incentive Align vPLS stakers, Validators, VOUCH holders and the Vouch Team.
 
 ## Initial Supply Distribution
-|Allocation |Percent | Notes | 
-|--|:--:|--|
-|Total Supply | **100%** | 100,000,000,000 Max (capped) supply
-|
-|*Distribution*
-|Liquidity Pool| **55%** |  Added to LP Pools
-|Team| **35%** | Issued to Team Wallets
-|DAO Treasury | **10%** | DAO Allocated as follows: 
-|             |   35%   |   - Marketing 
-|             |   35%   |   - Future Rewards
-|             |   30%   |   - Future Liqudity
+| Allocation         |  Percent  | Notes                               |
+| ------------------ | :-------: | ----------------------------------- |
+| Liquidity Pool     |  **35%**  | Added to LP Pools                   |
+| Validators         | **0.6%**  | Airdropped                          |
+| vPLS holders       |  **2%**   | Airdropped                          |
+| NFT Holders        |  **10%**  | Airdropped                          |
+| Team               |  **25%**  | Issued to Team Wallets              |
+| Vouch DAO Origin   |  **15%**  | Held in DAOs Account                |
+| DAO Treasury       | **12.4%** | Marketing, rewards & LP     |
+|                    |           |                                     |
+| TOTAL SUPPLY       | **100%**  | 100,000,000,000 (capped)            |
 
 ## Basic VOUCH Token Dynamics
 - Deflationary (no minting possible)
@@ -40,16 +40,18 @@ VOUCH token is the Vouch protocol's future governance token, and gives power to 
 - ERC20 Token with Governance Interface  (enabled in Phase 3)
 
 ## Configurable VOUCH Token settings
-|Token Setting | Value | Note|
-|--|:--:|--|
-VOUCH Buy Fee | 5% | Configurable setting of 0-10%
-VOUCH Sell Fee | 5% | Configurable setting of 0-10%
-VOUCH TX Fee | True | When set Buy Fee applies to transfers
-VOUCH TX Limit |  1,000,000,000 (1% Supply)  | Set to 100,000,000 (0.1% Supply) 1st 14 Days of Launch
-Swapback Threshold |1,000 | VOUCH accumulated from Fees to trigger Swap Back.
-Fee Exempt | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt 
-TX Limit Exempt | `0xADDRESSES`  | Vouch Ecosystem related addresses are Exempt 
-Dividend Exempt | `0xADDRESSES`  | Vouch Ecosystem related addresses are Exempt 
+
+| Token Setting      |     Value     | Note                                              |
+| ------------------ | :-----------: | ------------------------------------------------- |
+| VOUCH Buy Fee      |      5%       | Configurable setting of 0-10%                     |
+| VOUCH Sell Fee     |      5%       | Configurable setting of 0-10%                     |
+| VOUCH TX Fee       |     True      | When set Buy Fee applys to transfers              |
+| VOUCH TX Limit     |     100%      | percent of total supply (1hr after launch)        |
+| Swapback Threshold |     0.02%     | VOUCH accumulated from Fees to trigger Swap Back. |
+| Fee Exempt         | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt      |
+| TX Limit Exempt    | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt      |
+| Dividend Exempt    | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt      |
+
 
 To understand how VOUCH token interacts with the wider Vouch Ecosystem refer to the [Vouch Ecosystem](/docs/vouch_ecosystem/Ecosystem_Overview.html) section.
  

@@ -17,9 +17,27 @@ figcaption {
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(270deg, #4F8CEF,#4F8CEF,#FF8533, #FF8533);
-  --vp-c-brand-1: #FF8533;
+  --vp-c-bg: #EDECE3;
+  --vp-c-text: #1B1B1F;                /* Primary text color (main content) */
+  --vp-c-text-1: #1B1B1F;              /* Highest emphasis text (headings, important labels) */
+  --vp-c-text-2: #7D794F;              /* Secondary text (captions, metadata) */
+  --vp-c-text-3: #7D794F;              /* Tertiary text (very subtle elements, disabled states) */
+  --vp-c-bg-alt: #F3F3EC;               /* Sidebar background */
+  --vp-c-brand-1: #FF8533;              /* menu headings font color */
   --vp-c-brand-2: #4F8CEF;
-  --vp-c-brand-3: #FF8533;
+  --vp-c-brand-3: #FF8533;                /* brand button color*/
   --vp-c-default-3: #FF8533;
   --vp-c-default-2: #4F8CEF;
+  --vp-c-bg-soft: #F3F3EC;              /* Slightly darker/lighter background for cards/sections */
+  --vp-button-alt-bg: #4F8CEF;          /* alt button color*/
+  --vp-button-alt-text: #ffffff;          /* alt button text color*/
+}
+
+.dark {
+  --vp-c-bg: #111111;          /* Dark mode background */
+  --vp-c-text: #FFFFFF;        /* Dark mode text */
+  --vp-c-text-1: #FFFFFF;              /* Highest emphasis text (headings, important labels) */
+  --vp-c-text-2: #8E9397;              /* Secondary text (captions, metadata) */
+  --vp-c-bg-alt: #1A1A1A;       /* Sidebar background */
+  --vp-c-bg-soft: #1A1A1A;    /* Slightly darker/lighter background for cards/sections */
 }

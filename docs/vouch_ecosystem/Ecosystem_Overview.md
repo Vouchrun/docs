@@ -13,7 +13,9 @@ The Vouch Ecosystem can be broadly defined as a set of protcols which make up a 
 
 ## System Yield
 
-The Vouch Ecosystem produces real yield from two primary sources:
+The Vouch ecosystem produces real yield from two primary sources; Vouch Validator fees and VOUCH token Fees from buys, sells and transfers:
+
+
 ### Vouch Validators 
 Vouch Validators provide security on the Pulsechain network and in return for these services they recieve rewards and priority fees in the form of PLS. These rewards and fees are distributed within the ecosystem to reward the partcipants of the system.
 
