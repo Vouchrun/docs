@@ -143,19 +143,20 @@ This command will generate a set of files (in your chosen output directory) whic
 
 ## Setting your Suggested Fee Recipient
 
-When configuring your Validator clients it is important to configure your fee recipient address to the Vouch `FeePool` contract address, otherwise you will be slashed by the Vouch Protocol. 
+When configuring your Validator clients it is important to configure your fee recipient address to the Vouch `ValidatorFeeDepositor` contract address, otherwise you will be slashed by the Vouch Protocol. 
 
 >[!CAUTION]
-> You MUST set your `suggested-fee-recipient` correctly to the `FeePool` contract when running your Validator Client.
+> You MUST set your `suggested-fee-recipient` correctly to the `ValidatorFeeDeposit` contract address when running your Validator Client.
+> NOTE: This has recently changed from the 'FeePool' contract address on Mainnet with the launch of the Vouch Ecosystem and associated VOUCH token.
 
-FeePool Contract Address:
+ValidatorFeeDeposit Contract Address:
 
 :::tabs
 
-== Mainnet FeePool Address
+== Mainnet ValidatorFeeDeposit Address
 
 ```
-0x5eAd01d58067a68D0D700374500580eC5C961D0d
+0x9325008eE3B5982c10010C8f12b6CD4943F48fA6
 ```
 
 == Testnet FeePool Address

@@ -28,12 +28,10 @@ However before running the client you need to choose which way you would like to
 == Mainnet
 Withdraw Address Setting: ```0x1F082785Ca889388Ce523BF3de6781E40b99B060```
 
-Prority Fee Address Setting: ```0x5eAd01d58067a68D0D700374500580eC5C961D0d```
 
 == Testnet
 Withdraw Address Setting: ```0x555E33C8782A0CeF14d2e9064598CE991f58Bc74```
 
-Prority Fee Address Setting: ```0x4C14073Fa77e3028cDdC60bC593A8381119e9921```
 :::
 
 ### When Using Complex or Custom keys_dir Paths
