@@ -1,4 +1,4 @@
-# VOUCH and DAO Distirbutor Layer
+# VOUCH and DAO Distribution Layer
 
 ::: warning 
 Settings and values are preliminary and subject to change prior to launch of VOUCH token. 
@@ -20,6 +20,7 @@ The below Fee settings are how Node operators and the Treasury are compensated f
 | Protocol Fee                |     10%      | Percentage of Platform Fee i.e. 10% of 5% |
 
 In additon to the above Validator earned Rewards, the Vouch token has the ability to enable the collection of fees on any buy, sell or transfer transactions. These setting are configured as below, and the fees generated will be injected into the Distribution Layer of the ecosystem along with the Validator Rewards and Priorty Fees.
+
 
 | VOUCH Token Fee Setting | Value | Note                                 |
 | ----------------------- | :---: | ------------------------------------ |

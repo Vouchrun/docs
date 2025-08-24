@@ -16,12 +16,13 @@ However before running the client you need to choose which way you would like to
 
 :bulb: The below exmaples are using Geth and Lighthouse, you will need to make sure the ports used match your client configuration. 
 
-| config | description | example value |
-| --- | --- | --- |
-| execution_endpoint | Execution RPC endpoint | http://127.0.0.1:8545 |
-| consensus_endpoint | Consensus (Beacon chain) RPC endpoint | http://127.0.0.1:5052 or public RPC |
-| keys_dir | keystore path created by [pulse-staking-deposit-cli](https://github.com/Vouchrun/pulse-staking-deposit-cli) | ./validator_keys |
-| withdraw_address | Contract address of NetworkWithdraw | `0x1F082785Ca889388Ce523BF3de6781E40b99B060` |
+| config             | description                                                                                                 | example value                                |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| execution_endpoint | Execution RPC endpoint                                                                                      | http://localhost:8545                        |
+| consensus_endpoint | Consensus (Beacon chain) RPC endpoint                                                                       | http://localhost:5052 or public RPC          |
+| keys_dir           | keystore path created by [pulse-staking-deposit-cli](https://github.com/Vouchrun/pulse-staking-deposit-cli) | ./validator_keys                             |
+| withdraw_address   | Contract address of NetworkWithdraw                                                                         | `0x1F082785Ca889388Ce523BF3de6781E40b99B060` |
+
 
 :::tabs
 
@@ -109,7 +110,7 @@ sudo docker run hello-world
 
 == Format
 ```sh
-sudo sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped -v "/PATH_TO_KEYS":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
+sudo sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/PATH_TO_KEYS":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
     --consensus_endpoint 'BEACON_CHAIN_RPC_ENDPOINT' \
     --execution_endpoint 'EXECUTION_RPC_ENDPOINT'  \
     --keys_dir ./validator_keys \
@@ -124,7 +125,7 @@ sudo sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="act
 # use Ctrl+P followed by Ctrl+Q to detach from docker container and leave it running
 # remove [="actual_password"] to input password at startup, container will cache password
 
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
+sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
 --consensus_endpoint https://rpc-pulsechain.g4mm4.io/beacon-api \
 --execution_endpoint https://rpc-pulsechain.g4mm4.io \
 --keys_dir /keys \
@@ -136,7 +137,7 @@ sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_p
 # runs docker container in deatched mode 
 # follow docker logs to view status of ejector
 
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
+sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
 --consensus_endpoint https://rpc-pulsechain.g4mm4.io/beacon-api \
 --execution_endpoint https://rpc-pulsechain.g4mm4.io \
 --keys_dir /keys \
@@ -150,7 +151,7 @@ sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_p
 # use Ctrl+P followed by Ctrl+Q to detach from docker container and leave it running
 # remove [="actual_password"] to input password at startup, container will cache password
 
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
+sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
 --consensus_endpoint https://rpc-testnet-pulsechain.g4mm4.io/beacon-api \
 --execution_endpoint https://rpc-testnet-pulsechain.g4mm4.io \
 --keys_dir /keys \
@@ -162,7 +163,7 @@ sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_p
 # runs docker container in deatched mode 
 # follow docker logs to view status of ejector
 
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
+sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
 --consensus_endpoint https://rpc-testnet-pulsechain.g4mm4.io/beacon-api \
 --execution_endpoint https://rpc-testnet-pulsechain.g4mm4.io \
 --keys_dir /keys \

@@ -30,8 +30,7 @@ export default withMermaid(defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vouchrun/' },
-      { icon: 'twitter', link: 'https://x.com/vouchlsd' },
-      //{ icon: 'telegram', link: 'https://t.me/vouchrun/' } // https://vitepress.dev/reference/default-theme-config#sociallinks
+      { icon: 'twitter', link: 'https://x.com/vouchLSD/' }
     ],
   },
   markdown: {
