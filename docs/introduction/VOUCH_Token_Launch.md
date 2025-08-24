@@ -23,12 +23,12 @@ VOUCH and the associated contracts have already been deployed on pulsechain main
 
 :::info **Sniper Protection** is built into the token contract so transfer and trading is not currently active.
 :::
-- Once the token contract's launch function has been called trading and transfers will be active.
-- Anti-sniper bot protection will remain active for 10mins after launch, reducing the capacity for bots to grab excess supply prior to humans.
+- Once the token contract's `launch` function has been called trading and transfers will be active.
+- Anti-sniper bot protection will be active on initial launch, reducing the capacity for bots to grab excess supply prior to humans.
 - Per Transaction Trading Limits will be gradually increased over the first hour to ensure a smoother distribution of the tokens allocated to the liquidity pools.
-     - Initial Phase (0-10 minutes): 0.1% of total supply (100,000,000 tokens) per transaction.
-     - Intermediate Phase (10-70 minutes): 0.5% of total supply (500,000,000 tokens) per transaction.
-     - Final Phase (70 minutes onwards): 100% of total supply (100,000,000,000 tokens) per transaction, effectively removing all limits.
+     - Initial Phase: (random number of mins, no longer then 10min) 0.1% of total supply (100,000,000 tokens) per transaction.
+     - Intermediate Phase (up to 60 minutes): 0.5% of total supply (500,000,000 tokens) per transaction.
+     - Final Phase (60 minutes onwards): 100% of total supply (100,000,000,000 tokens) per transaction, effectively removing all limits.
 
 **Token Dynamics:**
 - VOUCH is deflationary with a starting (Max) supply of 100,000,000,000 VOUCH
