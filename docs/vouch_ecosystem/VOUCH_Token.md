@@ -27,7 +27,7 @@ VOUCH token is the Vouch protocol's future governance token, and gives power to 
 | NFT Holders        |  **10%**  | Airdropped                          |
 | Team               |  **25%**  | Issued to Team Wallets              |
 | Vouch DAO Origin   |  **15%**  | Held in DAOs Account                |
-| DAO Treasury       | **12.4%** | DAO Allocated as follows:           |
+| DAO Treasury       | **12.4%** | Marketing, rewards & LP     |
 |                    |           |                                     |
 | TOTAL SUPPLY       | **100%**  | 100,000,000,000 (capped)            |
 
