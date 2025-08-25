@@ -31,7 +31,7 @@ hero:
       link: https://app.vouch.run
     # - theme: alt
     #   text: IPFS User App
-    #   link: https://dweb.link/ipfs/bafybeibu5yyi67xr4k3crl4yrqfmyl7n4jdst444lsec5rmwj7doiybfuy
+    #   link: https://app-vouch.on-fleek.app/
     - theme: brand
       text: Validator App
       link: https://val.vouch.run

@@ -40,6 +40,7 @@ VOUCH token is the Vouch protocol's future governance token, and gives power to 
 - ERC20 Token with Governance Interface  (enabled in Phase 3)
 
 ## Configurable VOUCH Token settings
+
 | Token Setting      |     Value     | Note                                              |
 | ------------------ | :-----------: | ------------------------------------------------- |
 | VOUCH Buy Fee      |      5%       | Configurable setting of 0-10%                     |
@@ -50,6 +51,7 @@ VOUCH token is the Vouch protocol's future governance token, and gives power to 
 | Fee Exempt         | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt      |
 | TX Limit Exempt    | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt      |
 | Dividend Exempt    | `0xADDRESSES` | Vouch Ecosystem related addresses are Exempt      |
+
 
 To understand how VOUCH token interacts with the wider Vouch Ecosystem refer to the [Vouch Ecosystem](/docs/vouch_ecosystem/Ecosystem_Overview.html) section.
  

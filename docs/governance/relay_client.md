@@ -24,18 +24,19 @@ However before running the client you need to choose which way you would like to
 
 ### Relay Settings
 
-| config | description | example value  (recommended) |
-| --- | --- | --- |
-| account | voter account addressMake sure you imported it before using |0xYOUR_ACCOUNT| |
-| trustNodeDepositAmount     | the trust node validator initial deposit amount taken from PLS pool | 1000000  |
-| eth2EffectiveBalance       | the effective balance of a validator            | 32000000 |
-| maxPartialWithdrawalAmount | The threshold used to differentiate between rewards and exit balance. If the amount received from Beacon chain is less than this value, it is treated as rewards; otherwise, it is considered as exit balance.                   | 8000000  |
-| gasLimit    | Total gas allowance for transaction, relay will batch larger requests |3000000 |
-| maxGasPrice | Gas Price, note Pulsechain gas is volatile so allow ample for peak periods, relay will hold off sending if network gas requriement is over this limit |10000000 (in Gwei) |
-| GasPriceMultiplier  | Increase Gas by Factor of, overcomes gas spikes |2.5 |
-| batchRequestBlocksNumber | a number which limits concurrent requests on Beacon chain, due to the design of Beacon chain RPC |16 (32 Max) |
-| eventFilterMaxSpanBlocks | Controls event speed prodessing of the relay client |100000|
-| runForEntrustedLsdNetwork | set this config to true only if you are one of the entrusted voters who are responsible to relay data for entrusted LSD networks | false |
+| config                     | description                                                                                                                                                                                                         | example value (recommended) |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| account                    | voter account addressMake sure you imported it before using                                                                                                                                                         | 0xYOUR_ACCOUNT              |
+| trustNodeDepositAmount     | the trust node validator initial deposit amount taken from PLS pool                                                                                                                                                 | 1000000                     |
+| eth2EffectiveBalance       | the effective balance of a validator                                                                                                                                                                                | 32000000                    |
+| maxPartialWithdrawalAmount | The threshold used to differentiate between rewards and exit balance. <br> If the amount received from Beacon chain is less than this value, it is treated as rewards; otherwise, it is considered as exit balance. | 8000000                     |
+| gasLimit                   | Total gas allowance for transaction, relay will batch larger requests                                                                                                                                               | 3000000                     |
+| maxGasPrice                | Gas Price, note Pulsechain gas is volatile so allow ample for peak periods, relay will hold off sending if network gas requriement is over this limit                                                               | 10000000 (in Gwei)          |
+| GasPriceMultiplier         | Increase Gas by Factor of, overcomes gas spikes                                                                                                                                                                     | 2.5                         |
+| batchRequestBlocksNumber   | a number which limits concurrent requests on Beacon chain, due to the design of Beacon chain RPC                                                                                                                    | 16 (32 Max)                 |
+| eventFilterMaxSpanBlocks   | Determines number of blocks to fetch in a request when syncing relay client                                                                                                                                         | 100000                      |
+| maxEjectedValPerCycle      | Max number of validators to elect to exit in a single request, prevents exceeding `gasLimit`                                                                                                                        | 100                         |
+| runForEntrustedLsdNetwork  | set this config to true only if you are one of the entrusted voters who are responsible to relay data for entrusted LSD networks                                                                                    | false                       |
 
 
 
@@ -82,6 +83,7 @@ maxGasPrice = "40000000"              #Gwei
 GasPriceMultiplier = 2.5
 batchRequestBlocksNumber = 16
 eventFilterMaxSpanBlocks = 100000
+maxEjectedValPerCycle  = 100          # 0 for unlimited
 runForEntrustedLsdNetwork = false
 
 [pinata]
@@ -93,8 +95,12 @@ pinDays = 180
 lsdTokenAddress = "0x79BB3A0Ee435f957ce4f54eE8c3CFADc7278da0C"
 lsdFactoryAddress = "0x4bf4df49f8bc72a4e484443a14b827cb8c47c716"
 
-## Groups of endpoints can be set for redundancy 
+# Primary Local Endpoints , if running relay on Pulsechain Node
+[[endpoints]]
+eth1 = "http://localhost:8545"
+eth2 = "http://localhost:5052"
 
+# G4mm4.io endpoints
 [[endpoints]]
 eth1 = "https://rpc-pulsechain.g4mm4.io"
 eth2 = "https://rpc-pulsechain.g4mm4.io/beacon-api/"
