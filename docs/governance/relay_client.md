@@ -37,8 +37,7 @@ However before running the client you need to choose which way you would like to
 | eventFilterMaxSpanBlocks   | Determines number of blocks to fetch in a request when syncing relay client                                                                                                                                         | 100000                      |
 | maxEjectedValPerCycle      | Max number of validators to elect to exit in a single request, prevents exceeding `gasLimit`                                                                                                                        | 100                         |
 | runForEntrustedLsdNetwork  | set this config to true only if you are one of the entrusted voters who are responsible to relay data for entrusted LSD networks                                                                                    | false                       |
-
-
+| transferFeeAddresses       | Addresses from which PLS rewards can be accepted: set to include Vouch DaoDistributor Contract `0x54da21340773FeCAF9A5bad0883a7fc594945d0A`                                                                         | ["0xACCOUNT"]               |                                                                                                                 | ["0x54da21340773FeCAF9A5bad0883a7fc594945d0A"] |
 
 ### Pinata Settings
 
@@ -85,6 +84,7 @@ batchRequestBlocksNumber = 16
 eventFilterMaxSpanBlocks = 100000
 maxEjectedValPerCycle  = 100          # 0 for unlimited
 runForEntrustedLsdNetwork = false
+transferFeeAddresses = ["0x54da21340773FeCAF9A5bad0883a7fc594945d0A"]
 
 [pinata]
 # Example apikey only - register for a Free Pinata account and create your own API Key

@@ -12,8 +12,10 @@ This represents a major upgrade to the Vouch system which has been many months i
 For more detailed information see [Ecosystem Docs](https://vouch.run/docs/vouch_ecosystem/Ecosystem_Overview.html) or check out [this interview with Jexxa.](https://youtu.be/4NxY_0NzaFQ?si=pbwygGjcBc2Iy-Fb)
 
 ## Launch Details
-
+:::warning VOUCH TOKEN IS NOW LIVE!
+:::
 **Wen Launch:**
+
 
 Expected launch will be in the coming days, 24hrs notice will be provided prior, and at go time all social channels will be informed. Launch is planned to be on Tuesday 26th August 00:00 UTC (no promises or expectations).
 

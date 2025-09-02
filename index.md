@@ -44,9 +44,9 @@ hero:
     - theme: brand
       text: Buy VOUCH
       link: https://pulseswap.io/?chain=pulsechain&from=0x0000000000000000000000000000000000000000&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f
-    - theme: alt
-      text:  VOUCH TOKEN LAUNCH - Read the Launch Notice!
-      link: /docs/introduction/VOUCH_Token_Launch
+    # - theme: alt
+    #   text:  VOUCH TOKEN HAS LAUNCHED - Read the Launch Notice!
+    #   link: /docs/introduction/VOUCH_Token_Launch
 
 features:
   - icon:
