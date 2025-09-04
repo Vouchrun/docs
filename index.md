@@ -86,7 +86,7 @@ features:
      src: /image/VouchEcosystem.png
      width: 150
     title: Intro to the Vouch Ecosystem
-    details: Lean how the Vouch Ecosystem works for you.
+    details: Lean how the Vouch Ecosystem works for you in 10mins!
     link: /docs/vouch_ecosystem/Ecosystem_Overview  
 
 ---

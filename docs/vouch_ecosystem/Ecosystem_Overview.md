@@ -1,7 +1,15 @@
 # The Vouch Ecosystem
 
 ## Overview
-The Vouch Ecosystem can be broadly defined as a set of protcols which make up a Liquid Staking Protocol with a Governance layer. The ecosystem can be broken down into these parts.
+The Vouch Ecosystem can be broadly defined as a set of protcols which make up a Liquid Staking Protocol with a Governance layer. 
+
+Short on time, watch this [video](https://youtu.be/oRMzRxW6I8g) which takes you through the the Vouch Ecosystem in 10mins.
+
+@[youtube](oRMzRxW6I8g?si=50msvijataCx_KNy&amp;controls=1&amp;start=0&amp;rel=0)
+
+
+## Ecosystem Components
+The ecosystem can be broken down into these parts.
 
 [1. Liquid Staking Derivative Protcol](/docs/vouch_ecosystem/vouch_lsd.html) and assoicated contracts and services.
 
