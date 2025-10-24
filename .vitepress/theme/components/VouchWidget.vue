@@ -129,7 +129,7 @@ defineExpose({ openModal, closeModal });
 }
 
 .iframe-shell {
-  background: #0f0f0f; /* dark shell for the widget */
+  background: #1A1A1A; /* dark shell for the widget */
   border-radius: 18px;
   overflow: hidden;
   padding: 0; /* remove extra inner padding so the shell touches edges */
@@ -142,7 +142,7 @@ defineExpose({ openModal, closeModal });
   border: none;
   min-height: 900px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: px;
   background: transparent;
 }
 
