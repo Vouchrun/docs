@@ -46,7 +46,7 @@ const isDark = ref(false);
 const lightModeUrl =
   'https://widget.switch.win/widget?network=pulsechain&background_color=f3f3ec&backdrop_color=f3f3ec&font_color=1b1b1f&secondary_font_color=7d794f&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f';
 const darkModeUrl =
-  'https://widget.switch.win/widget?network=pulsechain&background_color=111111&backdrop_color=1a1a1a&font_color=ffffff&secondary_font_color=8e9397&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f';
+  'https://widget.switch.win/widget?network=pulsechain&background_color=111111&backdrop_color=111111&font_color=ffffff&secondary_font_color=8e9397&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f';
 
 // Computed widget URL based on theme
 const widgetUrl = computed(() => {
@@ -175,7 +175,7 @@ defineExpose({ openModal, closeModal });
 .modal-container {
   position: relative;
   background: transparent !important; /* force container transparent to avoid white frame */
-  border-radius: 12px;
+  border-radius: 18px;
   width: 100%;
   max-width: 480px;
   max-height: 90vh;
@@ -189,7 +189,7 @@ defineExpose({ openModal, closeModal });
   top: 12px;
   right: 12px;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.34);
   border: none;
   border-radius: 50%;
   width: 36px;
