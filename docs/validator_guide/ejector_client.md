@@ -41,134 +41,43 @@ If your environment has mulitple keys_dir locations or you have used multiple ke
 
 ## Run Using Docker
 
-### Installation
+### Ejector Setup and Management Tool
 
-:::tabs
-== Quick Install
+The Ejector Management tools is a simple way to operate the ejector client. This tool makes use of Docker containers to run the ejector client.
+Using this tool is the recommend way to run the Ejector client as configuration and operation is all controlled from an easy to run terminal menu. 
+
+Two files are used in this process; 
+- `ejector-menu.sh` the actual management tool
+- `ejector_settings.json` stores current settings
 
 The below command will:
-- Install Docker (if not already installed)
-- Configure ejector directory to point to keystores
-- Enable automatic OS and ejector container updates (optional)
-- Start the ejector docker container the first time
+- Download the ejector management tool `ejector-menu.sh` which:
+  - Installs Docker (if not already installed)
+  - Selects mode of operation i.e. Detached or Interactive
+  - Configures ejector settings (and saves to a file)
+  - Controls; starting, stopping and removal of ejector client
 
-
-Note: this command needs to be run as root.
+Note: this command needs to be run as root (sudo).
 
 ```bash
-curl -sL https://raw.githubusercontent.com/Vouchrun/pls-lsd-ejector/refs/heads/main/ejector-install.sh > ejector-install.sh; sudo bash ejector-install.sh
+curl -sL https://raw.githubusercontent.com/Vouchrun/pls-lsd-ejector/refs/heads/main/ejector-menu.sh > ejector-menu.sh; sudo chmod +x ejector-menu.sh && sudo ./ejector-menu.sh
 ```
 
-== Detailed Install
-### Installing Docker (optional - if not alredy installed)
 
-Clean up conflicting versions and install docker
 
-```sh
-for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
-```
-
-Add Docker's official GPG key:
-```sh
-sudo apt-get update
-sudo apt-get install ca-certificates curl
-sudo install -m 0755 -d /etc/apt/keyrings
-sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-sudo chmod a+r /etc/apt/keyrings/docker.asc
-```
-
-Add the repository to Apt sources:
-```sh
-echo \
-
-  "deb [arch=$(dpkg --print-vouch_ecosystem) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-```
-
-Install the Docker packages.
-```sh
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-```
-
-Add current user to the docker group
-```sh
-sudo usermod -aG docker $USER
-```
-Verify that the Docker Engine Installed (Optional) 
-```sh
-sudo docker run hello-world
-```
-:::
-
-### Start the Ejector Client
+### Ejector Management Tool Screenshots
 
 :::tabs
 
-== Format
-```sh
-sudo sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/PATH_TO_KEYS":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
-    --consensus_endpoint 'BEACON_CHAIN_RPC_ENDPOINT' \
-    --execution_endpoint 'EXECUTION_RPC_ENDPOINT'  \
-    --keys_dir ./validator_keys \
-    --withdraw_address '0x_NETWORK_WITHDRAW_CONTRACT_ADDR'
-```
+== Modes
+![Vouch PLS Staking Validator](/validator/ejector_tool_welcome.png){width=600}
 
 
-== Mainnet Example
-### Run in interactive mode
-```sh
-# runs docker container in interactive mode 
-# use Ctrl+P followed by Ctrl+Q to detach from docker container and leave it running
-# remove [="actual_password"] to input password at startup, container will cache password
+== Mode Selection
+![Vouch PLS Staking Validator](/validator/ejector_mode_select.png){width=550}
 
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
---consensus_endpoint https://rpc-pulsechain.g4mm4.io/beacon-api \
---execution_endpoint https://rpc-pulsechain.g4mm4.io \
---keys_dir /keys \
---withdraw_address '0x1F082785Ca889388Ce523BF3de6781E40b99B060'
-```
-
-### Run in detached mode
-```sh
-# runs docker container in deatched mode 
-# follow docker logs to view status of ejector
-
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
---consensus_endpoint https://rpc-pulsechain.g4mm4.io/beacon-api \
---execution_endpoint https://rpc-pulsechain.g4mm4.io \
---keys_dir /keys \
---withdraw_address '0x1F082785Ca889388Ce523BF3de6781E40b99B060'
-```
-
-== Testnet Example
-### Run in interactive mode
-```sh
-# runs docker container in interactive mode 
-# use Ctrl+P followed by Ctrl+Q to detach from docker container and leave it running
-# remove [="actual_password"] to input password at startup, container will cache password
-
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
---consensus_endpoint https://rpc-testnet-pulsechain.g4mm4.io/beacon-api \
---execution_endpoint https://rpc-testnet-pulsechain.g4mm4.io \
---keys_dir /keys \
---withdraw_address 0x555E33C8782A0CeF14d2e9064598CE991f58Bc74
-```
-
-### Run in detached mode
-```sh
-# runs docker container in deatched mode 
-# follow docker logs to view status of ejector
-
-sudo docker run --pull always  --name ejector -it -e KEYSTORE_PASSWORD="actual_password" --restart unless-stopped --network host -v "/blockchain/validator_keys":/keys ghcr.io/vouchrun/pls-lsd-ejector:main start \
---consensus_endpoint https://rpc-testnet-pulsechain.g4mm4.io/beacon-api \
---execution_endpoint https://rpc-testnet-pulsechain.g4mm4.io \
---keys_dir /keys \
---withdraw_address 0x555E33C8782A0CeF14d2e9064598CE991f58Bc74
-```
+== Ejector Management (Detached mode)
+![Vouch PLS Staking Validator](/validator/ejector_control.png){width=550}
 :::
 
 
