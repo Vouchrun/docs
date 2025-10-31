@@ -45,7 +45,7 @@ Running the becon client in Archive Mode will require approx 100GB more storage 
 If your node is not running as a Beacon Archive, best to use a Public RPC such as;
 
 ```link
-https://eth2-rpc.vouch.run
+https://rpc-beacon.vouch.run
 ```
 or
 ```link
