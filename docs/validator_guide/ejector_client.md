@@ -16,12 +16,12 @@ However before running the client you need to choose which way you would like to
 
 :bulb: The below exmaples are using Geth and Lighthouse, you will need to make sure the ports used match your client configuration. 
 
-| config             | description                                                                                                 | example value                                |
-| ------------------ | ----------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| execution_endpoint | Execution RPC endpoint                                                                                      | http://localhost:8545                        |
-| consensus_endpoint | Consensus (Beacon chain) RPC endpoint                                                                       | http://localhost:5052 or public RPC          |
-| keys_dir           | keystore path created by [pulse-staking-deposit-cli](https://github.com/Vouchrun/pulse-staking-deposit-cli) | ./validator_keys                             |
-| withdraw_address   | Contract address of NetworkWithdraw                                                                         | `0x1F082785Ca889388Ce523BF3de6781E40b99B060` |
+| config             | description                                                                                                 | example value                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| execution_endpoint | Execution RPC endpoint                                                                                      | http://localhost:8545                                   |
+| consensus_endpoint | Consensus (Beacon chain) RPC endpoint                                                                       | http://localhost:5052 or public node <BR/> (See note 1) |
+| keys_dir           | keystore path created by [pulse-staking-deposit-cli](https://github.com/Vouchrun/pulse-staking-deposit-cli) | /blockchain/validator_keys    (See note 2)              |
+| withdraw_address   | Contract address of NetworkWithdraw                                                                         | `0x1F082785Ca889388Ce523BF3de6781E40b99B060`            |
 
 
 :::tabs
@@ -35,7 +35,24 @@ Withdraw Address Setting: ```0x555E33C8782A0CeF14d2e9064598CE991f58Bc74```
 
 :::
 
-### When Using Complex or Custom keys_dir Paths
+### NOTES
+### 1. Beacon RPC Settings
+The ejector client needs to be able to call historic states from the Beacon RPC, which requries the RPC to be running as a Beacon Archive Node (not a full Archive node).
+Running the becon client in Archive Mode will require approx 100GB more storage space. 
+
+*Example:* In the Lighthouse client use the `--reconstruct-historic-states` flag in your startup command to set your node to be a Beacon Archive node.
+
+If your node is not running as a Beacon Archive, best to use a Public RPC such as;
+
+```link
+https://eth2-rpc.vouch.run
+```
+or
+```link
+https://rpc-pulsechain.g4mm4.io/beacon-api/
+```
+
+### 2. When Using Complex or Custom keys_dir Paths
 If your environment has mulitple keys_dir locations or you have used multiple keystore passwords, it is possible to run mulitple version of the ejector client on the same Node. The ejector will also detect keystores in subdirectories if required.
 
 
