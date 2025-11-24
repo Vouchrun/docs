@@ -37,20 +37,19 @@ Withdraw Address Setting: ```0x555E33C8782A0CeF14d2e9064598CE991f58Bc74```
 
 ### NOTES
 ### 1. Beacon RPC Settings
-The ejector client needs to be able to call historic states from the Beacon RPC, which requries the RPC to be running as a Beacon Archive Node (not a full Archive node).
-Running the becon client in Archive Mode will require approx 100GB more storage space. 
+The ejector client needs to be able to call historic states from the Beacon RPC, which may requrie the RPC to be running as a Beacon Archive Node (not a full Archive node).
+Running the becon client in Archive Mode will require approx 100GB more storage space.
 
-*Example:* In the Lighthouse client use the `--reconstruct-historic-states` flag in your startup command to set your node to be a Beacon Archive node.
+*Example:* In the Lighthouse client use the `--reconstruct-historic-states` flag in your startup command to set your node to be a Beacon Archive node. 
 
-If your node is not running as a Beacon Archive, best to use a Public RPC such as;
+It is best to connect to `http://localhost:5052` , however if you are getting errors you can you can also use a public beacon RPC such as;
 
-```link
-https://rpc-beacon.vouch.run
-```
-or
-```link
-https://rpc-pulsechain.g4mm4.io/beacon-api/
-```
+| Node Provider | URL                                         |
+| ------------- | ------------------------------------------- |
+| Vouch RPC     | https://rpc-beacon.vouch.run                |
+| G4MM4.io      | https://rpc-pulsechain.g4mm4.io/beacon-api/ |
+
+
 
 ### 2. When Using Complex or Custom keys_dir Paths
 If your environment has mulitple keys_dir locations or you have used multiple keystore passwords, it is possible to run mulitple version of the ejector client on the same Node. The ejector will also detect keystores in subdirectories if required.
