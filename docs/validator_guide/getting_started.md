@@ -32,6 +32,13 @@ To particapte as a solo validator requires an assumed knowledge of how to techni
 
 Where becoming a Vouch Solo Validator differs, is primarly on point 3, in that the Vouch protocol allows validators to put up less of a stake, and be matched with the remaining stake from the User Pool of PLS deposited by users of the Protocol's Liquid Staking Token vPLS, in the case of a Solo Validator on Vouch this is 12Mil PLS, not the traditional 32Mil PLS.
 
+>[!IMPORTANT]
+> When running a validator on the Vouch Ecosystem you MUST:
+> 1. Set [suggested-fee-recipient](/docs/validator_guide/pulse-staking-deposit-cli.html#setting-your-suggested-fee-recipient) correctly when running your Validator Client.
+> 2. Run the [Ejector Client](/docs/validator_guide/ejector_client) to ensure orderly exits of Validators happen when requried. 
+
+
+
 The remainder of this Validator Staking Guide, will assume the operator of the validator has the above technical knowledge and hardware requriments to run a validator. If you would like more information on running a Pulsechain Validator the below resouces are a great place to start:
 
 ### Pulsechain Validator Resources
