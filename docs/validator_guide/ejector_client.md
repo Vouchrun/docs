@@ -37,12 +37,29 @@ Withdraw Address Setting: ```0x555E33C8782A0CeF14d2e9064598CE991f58Bc74```
 
 ### NOTES
 ### 1. Beacon RPC Settings
-The ejector client needs to be able to call historic states from the Beacon RPC, which may requrie the RPC to be running as a Beacon Archive Node (not a full Archive node).
-Running the becon client in Archive Mode will require approx 100GB more storage space.
 
-*Example:* In the Lighthouse client use the `--reconstruct-historic-states` flag in your startup command to set your node to be a Beacon Archive node. 
+#### Using Localhost Setting
+The ejector client needs to be able to call historic states from the Beacon RPC, which may require the RPC to be running as a Beacon Archive Node (not to be confused with an execution client full Archive node).
+Running the becon client in Archive Mode will require approx 100GB more storage space and will take some time to sync if you are doing this for the first time.
 
-It is best to connect to `http://localhost:5052` , however if you are getting errors you can you can also use a public beacon RPC such as;
+
+#### Beacon (Consensus) Client Settings
+:::tabs 
+
+== Lightouse Beacon Client
+Use the `--reconstruct-historic-states` flag in your startup command to set your node to be a Beacon Archive node. 
+
+
+== Prysm Beacon Client
+Use the `--slots-per-archive-point=128` flag in your startup command to set your node to be a Beacon Archive node.
+
+:::
+
+#### Using Public Node Setting
+
+:::warning
+ If you are getting errors in the Ejector Logs using a `localhost` OR you would like to use a Public RPC Node, you can set your `consensus_endpoint` to use one of the below; 
+:::
 
 | Node Provider | URL                                         |
 | ------------- | ------------------------------------------- |
