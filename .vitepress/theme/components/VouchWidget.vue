@@ -44,9 +44,9 @@ const isDark = ref(false);
 
 // Widget URLs based on theme
 const lightModeUrl =
-  'https://widget.switch.win/widget?network=pulsechain&background_color=f3f3ec&backdrop_color=f3f3ec&font_color=1b1b1f&secondary_font_color=7d794f&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f';
+  'https://widget.switch.win/widget?network=pulsechain&background_color=f3f3ec&backdrop_color=f3f3ec&font_color=1b1b1f&secondary_font_color=7d794f&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f&partnerAddress=0xF66e726f63D595e5aae0e8a73B669630F1a45e01';
 const darkModeUrl =
-  'https://widget.switch.win/widget?network=pulsechain&background_color=111111&backdrop_color=111111&font_color=ffffff&secondary_font_color=8e9397&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f';
+  'https://widget.switch.win/widget?network=pulsechain&background_color=111111&backdrop_color=111111&font_color=ffffff&secondary_font_color=8e9397&border_color=ff8a3b&from=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&to=0xD34f5ADC24d8Cc55C1e832Bdf65fFfDF80D1314f&partnerAddress=0xF66e726f63D595e5aae0e8a73B669630F1a45e01';
 
 // Computed widget URL based on theme
 const widgetUrl = computed(() => {
