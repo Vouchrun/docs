@@ -1,5 +1,12 @@
 <template>
   <Teleport to="body">
+    <iframe
+      v-show="!isOpen"
+      :src="widgetUrl"
+      class="preload-iframe"
+      tabindex="-1"
+      aria-hidden="true"
+    ></iframe>
     <Transition name="modal">
       <div v-if="isOpen" class="modal-overlay" @click.self="closeModal">
         <div class="modal-container">
@@ -158,6 +165,16 @@ defineExpose({ openModal, closeModal });
 </script>
 
 <style scoped>
+.preload-iframe {
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+  width: 480px;
+  height: 900px;
+  border: none;
+  pointer-events: none;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
