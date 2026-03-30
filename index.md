@@ -44,9 +44,9 @@ hero:
     - theme: brand
       text: Buy VOUCH
       link: '#buy-vouch'
-    # - theme: alt
-    #   text:  VOUCH TOKEN HAS LAUNCHED - Read the Launch Notice!
-    #   link: /docs/introduction/VOUCH_Token_Launch
+    - theme: alt
+      text: VOUCH and vPLS -- Staking HAS ARRIVED -- Try it Out Now!
+      link: https://app.vouch.run/staking-pools/
 
 features:
   - icon:
