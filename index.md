@@ -27,7 +27,7 @@ hero:
     alt: Vouch LSD Protocol
   actions:
     - theme: brand
-      text: Stake PLS
+      text: User App
       link: https://app.vouch.run
     # - theme: alt
     #   text: IPFS User App
@@ -45,8 +45,8 @@ hero:
       text: Buy VOUCH
       link: '#buy-vouch'
     - theme: alt
-      text: VOUCH and vPLS -- Staking HAS ARRIVED -- Try it Out Now!
-      link: https://app.vouch.run/staking-pools/
+      text: Referral SDK
+      link: /docs/downloads/referral_sdk/
 
 features:
   - icon:

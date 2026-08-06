@@ -122,6 +122,7 @@ function docs(){
           text: "Downloads",
           collapsed: true,
           items: [
+            {text: "Referral SDK", link: "/docs/downloads/referral_sdk/"},
             {text: "Branding kit", link: "/docs/downloads/branding_kit/"},
             {text: "Audits", link: "/docs/downloads/audits/"},
           ]
