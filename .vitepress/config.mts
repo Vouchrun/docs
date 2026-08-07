@@ -122,10 +122,16 @@ function docs(){
           text: "Downloads",
           collapsed: true,
           items: [
-            {text: "Referral SDK", link: "/docs/downloads/referral_sdk/"},
-            {text: "Referral Widget", link: "/docs/downloads/referral_widget/"},
             {text: "Branding kit", link: "/docs/downloads/branding_kit/"},
             {text: "Audits", link: "/docs/downloads/audits/"},
+          ]
+        },
+        {
+          text: "Referral",
+          collapsed: true,
+          items: [
+            {text: "Referral SDK", link: "/docs/referral/sdk/"},
+            {text: "Referral Widget", link: "/docs/referral/widget/"},
           ]
         },
 

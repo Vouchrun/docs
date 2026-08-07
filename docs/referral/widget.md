@@ -2,7 +2,7 @@
 
 The Vouch Referral Widget lets any website offer **PLS staking with your referral code** — no code required, just an iframe. Your visitors connect their wallet, deposit PLS into Vouch liquid staking, and your referral fee is split out atomically by the [ReferralDeposit contract](https://otter.pulsechain.com/address/0x04988E655163f7368683C9c6d668A8ccc7b142ad).
 
-It's a ready-made, Vouch-branded UI built on the [Referral SDK](/docs/downloads/referral_sdk) — so you get live quotes, fee disclosure, and wrong-network handling without writing a line of JavaScript.
+It's a ready-made, Vouch-branded UI built on the [Referral SDK](/docs/referral/sdk) — so you get live quotes, fee disclosure, and wrong-network handling without writing a line of JavaScript.
 
 ## Live example
 
@@ -77,5 +77,5 @@ The fee is taken from the freshly minted vPLS, never from the user's deposit, an
 
 - **Configurator** — [refwidget.vouch.run/config.html](https://refwidget.vouch.run/config.html): customize and copy your snippet with live preview
 - **Embed guide** — [docs/EMBED.md](https://github.com/Vouchrun/ref-widget/blob/main/docs/EMBED.md) in the widget repo
-- **Referral SDK** — [build your own custom UI](/docs/downloads/referral_sdk) with the underlying TypeScript SDK
+- **Referral SDK** — [build your own custom UI](/docs/referral/sdk) with the underlying TypeScript SDK
 - **Partner onboarding** — [step-by-step guide](https://github.com/Vouchrun/referral-sdk/blob/main/docs/ONBOARDING.md) covering codes, fees, and attribution
