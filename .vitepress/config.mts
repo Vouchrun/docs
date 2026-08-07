@@ -123,6 +123,7 @@ function docs(){
           collapsed: true,
           items: [
             {text: "Referral SDK", link: "/docs/downloads/referral_sdk/"},
+            {text: "Referral Widget", link: "/docs/downloads/referral_widget/"},
             {text: "Branding kit", link: "/docs/downloads/branding_kit/"},
             {text: "Audits", link: "/docs/downloads/audits/"},
           ]
