@@ -6,10 +6,10 @@ It's a ready-made, Vouch-branded UI built on the [Referral SDK](/docs/referral/s
 
 ## Live example
 
-This is the actual widget, embedded with the snippet shown below (referral code #1, dark theme):
+This is the actual widget, embedded with the snippet shown below (referral code #3, dark theme):
 
 <iframe
-  src="https://refwidget.vouch.run/?ref=1&theme=dark"
+  src="https://refwidget.vouch.run/?ref=3&theme=dark"
   width="420"
   height="500"
   style="border: 0; border-radius: 30px; display: block; margin: 24px auto;"
