@@ -130,6 +130,7 @@ function docs(){
           text: "Referral",
           collapsed: true,
           items: [
+            {text: "Overview", link: "/docs/referral/"},
             {text: "Referral SDK", link: "/docs/referral/sdk/"},
             {text: "Referral Widget", link: "/docs/referral/widget/"},
           ]

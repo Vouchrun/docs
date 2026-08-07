@@ -45,8 +45,8 @@ hero:
       text: Buy VOUCH
       link: '#buy-vouch'
     - theme: alt
-      text: Referral SDK
-      link: /docs/referral/sdk/
+      text: Create Referrals
+      link: /docs/referral/
 
 features:
   - icon:
