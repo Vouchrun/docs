@@ -17,8 +17,8 @@ npm install @vouchrun/referral-sdk
 | npm package | `@vouchrun/referral-sdk` (latest: 0.1.1) |
 | SDK source & issues | [github.com/Vouchrun/referral-sdk](https://github.com/Vouchrun/referral-sdk) |
 | Partner onboarding guide | [docs/ONBOARDING.md](https://github.com/Vouchrun/referral-sdk/blob/main/docs/ONBOARDING.md) |
-| Deployed contract | `0x04988E655163f7368683C9c6d668A8ccc7b142ad` on PulseChain |
-| Explorer | [View contract](https://otter.pulsechain.com/address/0x04988E655163f7368683C9c6d668A8ccc7b142ad) |
+| Deployed contract | [`0x04988E655163f7368683C9c6d668A8ccc7b142ad`](https://otter.pulsechain.com/address/0x04988E655163f7368683C9c6d668A8ccc7b142ad) on PulseChain |
+| Generate Referral Code | [app.vouch.run/referral](https://app.vouch.run/referral) |
 
 > **Note:** the contract is deployed on PulseChain **mainnet only** — there is no testnet deployment yet, so test with small real deposits (the protocol minimum is 10,000 PLS).
 
