@@ -6,17 +6,7 @@ The Vouch MEV stack is the infrastructure that decides this on PulseChain. It ro
 
 ## How it fits together
 
-```mermaid
-flowchart LR
-    Mempool[Public mempool] --> Searcher[Searcher]
-    Searcher -->|bundles| Builder[Builder]
-    Builder -->|bid block| Relay[MEV-Relay]
-    Relay -->|best header| Boost[MEV-Boost sidecar]
-    Boost --> Validator[Validator / Beacon Node]
-    Validator -->|signed block| Relay
-    Relay -->|payment to fee recipient| VFD[ValidatorFeeDepositor]
-    VFD --> Vouch[Vouch ecosystem / vPLS]
-```
+![Vouch MEV Stack architecture](/image/mev/mev-stack-overview.png 'Vouch MEV Stack')
 
 1. A **Searcher** watches the mempool for profitable opportunities and packages them into bundles.
 2. A **Builder** assembles the most valuable block it can from those bundles and the public mempool, and bids for it.
