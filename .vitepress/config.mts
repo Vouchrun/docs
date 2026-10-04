@@ -109,12 +109,22 @@ function docs(){
           ]
         },
         {
+          text: "MEV Stack",
+          collapsed: false,
+          items: [
+            {text: "Overview", link: "/docs/mev_stack/overview"},
+            {text: "MEV-Boost (Validators)", link: "/docs/mev_stack/mev_boost"},
+            {text: "MEV-Relay (Builders)", link: "/docs/mev_stack/mev_relay"},
+            {text: "BlockFerret (Vouch's Builder)", link: "/docs/mev_stack/blockferret"},
+          ]
+        },
+        {
           text: "Governance",
           collapsed: true,
           items: [
             // {text: "Introduction", link: "/docs/governance/introduction"},
             // {text: "VOUCH Token", link: "/docs/governance/vouch_token"},
-            {text: "Relay", link: "/docs/governance/relay"},
+            {text: "Voter-Relay", link: "/docs/governance/relay"},
             {text: "Relay Client (Voter)", link: "/docs/governance/relay_client"},
           ]
         },
