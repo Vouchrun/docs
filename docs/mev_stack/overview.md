@@ -6,13 +6,26 @@ The Vouch MEV stack is the infrastructure that decides this on PulseChain. It ro
 
 ## How it fits together
 
-![Vouch MEV Stack architecture](/image/mev/mev-stack-overview.png 'Vouch MEV Stack')
+```mermaid
+flowchart LR
+    Mempool[Public mempool] --> Searcher[Searcher]
+    Searcher -->|bundles| Builder[Builder]
+    Builder -->|bid block| Relay[MEV-Relay]
+    Relay -->|best header| Boost[MEV-Boost sidecar]
+    Boost --> Validator[Validator / Beacon Node]
+    Validator -->|signed block| Relay
+    Relay -->|payment: Vouch validator| VFD[ValidatorFeeDepositor]
+    VFD --> Vouch[Vouch ecosystem / vPLS]
+    Relay -->|payment: non-Vouch validator| Own[Validator's own fee recipient]
+```
 
 1. A **Searcher** watches the mempool for profitable opportunities and packages them into bundles.
 2. A **Builder** assembles the most valuable block it can from those bundles and the public mempool, and bids for it.
 3. The **MEV-Relay** runs a neutral auction: many builders compete, the highest valid bid wins.
 4. The validator's **MEV-Boost** sidecar asks the relay for the best block header and the validator signs it.
-5. The winning builder's payment lands at the validator's registered fee recipient — for Vouch validators that is the ValidatorFeeDepositor (VFD), which flows into the wider ecosystem.
+5. The winning builder's payment lands at the validator's **registered fee recipient**:
+   - **Vouch validators** register the **ValidatorFeeDepositor (VFD)**, so the payment flows into the Vouch ecosystem and on to vPLS holders.
+   - **Non-Vouch validators** register their own address, so they keep the payment directly.
 
 ## The three components
 

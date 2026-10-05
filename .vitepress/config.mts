@@ -2,8 +2,7 @@ import { defineConfig } from 'vitepress'
 import imageFigures from 'markdown-it-image-figures';
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
 import markdownItVideo from 'markdown-it-video';
-import { withMermaid } from "vitepress-plugin-mermaid";
-import elk from "elkjs";
+import { withMermaid } from "vitepress-mermaid-viewer";
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid(defineConfig({
@@ -53,7 +52,6 @@ export default withMermaid(defineConfig({
   },
   mermaid: {
     // Mermaid configuration options go here
-    elk: elk,
     // theme: 'default', // default, forest, dark, neutral
   },
   data: {
