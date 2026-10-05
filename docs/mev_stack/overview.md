@@ -35,7 +35,15 @@ flowchart LR
 | [MEV-Relay](./mev_relay) | The neutral auction builders bid through. | Builders | *Any builder. Open competition for every block.* |
 | [BlockFerret](./blockferret) | The Switch.win × Vouch alliance MEV builder. | The Vouch ecosystem | *Ethical building. No sandwiches, ever.* |
 
-Searchers: bundle submission goes to the **Vouch Builder** (`builder.vouch.run`) — it assembles blocks from your bundles and bids through the relay. See [Searchers (Submit Bundles)](./searchers).
+::: tip Searchers
+Bundle submission goes to the **Vouch Builder**, which assembles blocks from your bundles and bids through the relay. Submit bundles to:
+
+```text
+https://builder.vouch.run
+```
+
+See [Searchers (Submit Bundles)](./searchers) for authentication, onboarding, and limits.
+:::
 
 ## Ethics and neutrality
 
