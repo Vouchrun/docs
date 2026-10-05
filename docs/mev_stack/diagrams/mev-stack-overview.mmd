@@ -1,0 +1,9 @@
+flowchart LR
+    Mempool[Public mempool] --> Searcher[Searcher]
+    Searcher -->|bundles| Builder[Builder]
+    Builder -->|bid block| Relay[MEV-Relay]
+    Relay -->|best header| Boost[MEV-Boost sidecar]
+    Boost --> Validator[Validator / Beacon Node]
+    Validator -->|signed block| Relay
+    Relay -->|payment to fee recipient| VFD[ValidatorFeeDepositor]
+    VFD --> Vouch[Vouch ecosystem / vPLS]

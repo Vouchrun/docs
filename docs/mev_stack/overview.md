@@ -1,3 +1,7 @@
+<script setup>
+import ThemeImage from '../../.vitepress/theme/components/ThemeImage.vue'
+</script>
+
 # The Vouch MEV Stack
 
 MEV (Maximal Extractable Value) is the value available in the ordering of transactions inside a block. On every block someone captures it — the only questions are **who** captures it and **how** they behave while doing it.
@@ -6,7 +10,12 @@ The Vouch MEV stack is the infrastructure that decides this on PulseChain. It ro
 
 ## How it fits together
 
-![Vouch MEV Stack architecture](/image/mev/mev-stack-overview.png 'Vouch MEV Stack')
+<ThemeImage
+  light="/image/mev/mev-stack-overview.png"
+  dark="/image/mev/mev-stack-overview-dark.png"
+  alt="Vouch MEV Stack architecture"
+  caption="Vouch MEV Stack"
+/>
 
 1. A **Searcher** watches the mempool for profitable opportunities and packages them into bundles.
 2. A **Builder** assembles the most valuable block it can from those bundles and the public mempool, and bids for it.
