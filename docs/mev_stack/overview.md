@@ -20,14 +20,14 @@ The Vouch MEV stack is the infrastructure that decides this on PulseChain. It ro
 |---|---|---|---|
 | [MEV-Boost](./mev_boost) | A lightweight sidecar that runs next to a validator. | Validators | *Any validator. Keep your rewards, add the uplift.* |
 | [MEV-Relay](./mev_relay) | The neutral auction builders bid through. | Builders | *Any builder. Open competition for every block.* |
-| [BlockFerret](./blockferret) | Vouch's own ethical MEV builder, in alliance with Switch.win. | The Vouch ecosystem | *Ethical building. No sandwiches, ever.* |
+| [BlockFerret](./blockferret) | The Switch.win × Vouch alliance MEV builder. | The Vouch ecosystem | *Ethical building. No sandwiches, ever.* |
 
 ## Ethics and neutrality
 
 MEV is unavoidable. Vouch's approach is to make it transparent and fair rather than to censor it:
 
 - **The relay stays permissionless and credibly neutral** — open to every validator and every builder, with no allowlist and no favourites.
-- **Our own builder (BlockFerret) is where the ethics live** — it captures arbitrage and back-runs, and never sandwiches or front-runs users.
+- **BlockFerret, the alliance builder, is where the ethics live** — it captures arbitrage and back-runs, and never sandwiches or front-runs users.
 
 ## Public transparency
 
@@ -36,5 +36,6 @@ Every payload the relay delivers is publicly visible. Anyone can audit the flow 
 ## Where do you fit in?
 
 - **I'm a validator** and want more from my proposals → [MEV-Boost (Validators)](./mev_boost)
-- **I'm a builder / searcher** and want to bid for blockspace → [MEV-Relay (Builders)](./mev_relay)
-- **I want to understand Vouch's own builder** → [BlockFerret](./blockferret)
+- **I'm a builder** and want to bid for blockspace → [MEV-Relay (Builders)](./mev_relay)
+- **I'm a searcher** and want to submit bundles → [Searchers (Submit Bundles)](./searchers)
+- **I want to understand the alliance builder** → [BlockFerret](./blockferret)

@@ -1,12 +1,16 @@
-# BlockFerret — Vouch's Builder
+# BlockFerret — Alliance Builder
 
-**BlockFerret** is the ethical MEV builder of the Vouch stack, built in the [Switch.win](https://switch.win) × [Vouch.run](https://vouch.run) alliance. It is the builder that Vouch itself operates and connects to the [MEV-Relay](./mev_relay).
+**BlockFerret** is the ethical MEV builder of the Vouch stack, built in the [Switch.win](https://switch.win) × [Vouch.run](https://vouch.run) alliance. It is a builder connected to the [MEV-Relay](./mev_relay), operated as part of the alliance — separate from the **Vouch Builder**.
 
-A builder is the machine that assembles blocks and bids for them. BlockFerret is ours.
+A builder is the machine that assembles blocks and bids for them. BlockFerret is the alliance's builder.
 
 - **Website:** <https://blockferret.win>
 - **Role:** a builder connected to the Vouch MEV-Relay, bidding for PulseChain blockspace.
 - **Ethics:** arbitrage and back-runs only — never sandwiches, never front-running.
+
+::: tip Looking to submit bundles?
+Bundle submission is handled by the **Vouch Builder**, not BlockFerret. See [Searchers (Submit Bundles)](./searchers).
+:::
 
 ## Why an alliance?
 
