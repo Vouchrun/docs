@@ -113,8 +113,8 @@ function docs(){
             {text: "Overview", link: "/docs/mev_stack/overview"},
             {text: "MEV-Boost (Validators)", link: "/docs/mev_stack/mev_boost"},
             {text: "MEV-Relay (Builders)", link: "/docs/mev_stack/mev_relay"},
-            {text: "Searchers (Submit Bundles)", link: "/docs/mev_stack/searchers"},
             {text: "BlockFerret (Alliance Builder)", link: "/docs/mev_stack/blockferret"},
+            {text: "Searchers (Submit Bundles)", link: "/docs/mev_stack/searchers"},
           ]
         },
         {
