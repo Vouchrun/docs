@@ -3,10 +3,10 @@
 The Vouch MEV-Relay is the neutral auction house of the stack. Builders assemble blocks and bid for the right to have a validator propose them; the highest valid bid wins. More builders bidding means better prices for validators.
 
 - **Permissionless and credibly neutral** — any builder can register and compete. No allowlist, no favourites.
-- **Open to every builder** — including Vouch's own builder, [BlockFerret](./blockferret), which competes on the same terms.
+- **Open to every builder** — including the Switch.win × Vouch alliance builder, [BlockFerret](./blockferret), which competes on the same terms.
 - **Verifiable in public** — every delivered payload is listed on the [delivered-blocks explorer](https://boost-relay.vouch.run/mevblocks).
 
-Validators connect through the [MEV-Boost sidecar](./mev_boost). This page is for **builders and searchers** who want to bid for blockspace.
+Validators connect through the [MEV-Boost sidecar](./mev_boost). This page is for **builders** who want to bid for blockspace. Searchers submitting bundles should see [Searchers (Submit Bundles)](./searchers).
 
 ## Connect your builder
 
@@ -66,12 +66,7 @@ On a Flashbots-style builder these map to (for example):
 
 ## Searchers: submit bundles
 
-If you run a searcher, you can submit MEV bundles directly to the builder over a single, narrow edge. (Searchers and builders are the same audience here — a bundle is just a pre-packaged slice of a block.)
-
-- **Endpoint:** `POST https://builder.vouch.run` — JSON-RPC `eth_sendBundle` only.
-- **Auth:** header `X-Flashbots-Signature: <0x-address>:<0x-signature>` (the standard Flashbots signing scheme: `keccak256` of the raw request body, EIP-191 `personal_sign`). The recovered address must be on the allowlist.
-- **Onboarding:** send your signing address to the Vouch team to be added to the allowlist (see support below).
-- **Notes:** `blockNumber` is required and must be an absolute block; `replacementUuid` replaces an earlier bundle for the same target. PulseChain's base fee is high, so dust bundles whose payment is below the base-fee burn are rejected.
+If you run a searcher, submit your bundles to the **Vouch Builder**. See [Searchers (Submit Bundles)](./searchers) for the endpoint, signature authentication, onboarding, and limits.
 
 ## Public transparency
 
@@ -90,7 +85,8 @@ The [/mevblocks](https://boost-relay.vouch.run/mevblocks) explorer shows every d
 - [Vouchrun/go-pulse-builder](https://github.com/Vouchrun/go-pulse-builder) — a reference builder implementation.
 - [Delivered-blocks explorer](https://boost-relay.vouch.run/mevblocks) — live relay activity.
 - [MEV-Boost (Validators)](./mev_boost) — how validators connect.
-- [BlockFerret](./blockferret) — Vouch's own builder.
+- [Searchers (Submit Bundles)](./searchers) — submit bundles to the Vouch Builder.
+- [BlockFerret](./blockferret) — the Switch.win × Vouch alliance builder.
 
 ## Support
 
