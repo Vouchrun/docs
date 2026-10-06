@@ -57,19 +57,24 @@ features:
     details: This guide is a living document, more information will be added regularly.
     link: /docs/introduction/intro_to_LSD
   - icon:
-      light: /image/dex-screener-vPLS-light.svg
-      dark: /image/dex-screener-vPLS-dark.svg
-      width: 300
-    title: vPLS on Dexscreener
-    details: View the PulseX vPLS/PLS pair on Dexscreener.
-    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797
+      src: /image/mevstack_meet.png
+      width: 220
+    title: Vouch MEV Stack
+    details: MEV-Boost, the relay, and the alliance builder — how MEV works on PulseChain.
+    link: /docs/mev_stack/overview
   - icon:
-      light: /image/dex-screener-VOUCH-light.svg
-      dark: /image/dex-screener-VOUCH-dark.svg
-      width: 300
-    title: VOUCH on Dexscreener
-    details: View the PulseX VOUCH/PLS pair on Dexscreener.
-    link: https://dexscreener.com/pulsechain/0x801C369cB1443c087Cd327DfB53AECf378F6ff85
+      src: /image/blockferret_site.png
+      width: 220
+    title: BlockFerret
+    details: Vouch's alliance MEV builder with Switch.win — ethical building, no sandwiches.
+    link: https://blockferret.win
+    target: _blank
+  - icon:
+      src: /image/VouchEcosystem.png
+      width: 150
+    title: Intro to the Vouch Ecosystem
+    details: Lean how the Vouch Ecosystem works for you in 10mins!
+    link: /docs/vouch_ecosystem/Ecosystem_Overview
   - icon:
       src: /image/video1.png
       width: 190
@@ -83,9 +88,17 @@ features:
     details: Understanding Vouch LSD Protocol in 9 minutes!
     link: /docs/introduction/vouch_overview
   - icon:
-      src: /image/VouchEcosystem.png
-      width: 150
-    title: Intro to the Vouch Ecosystem
-    details: Lean how the Vouch Ecosystem works for you in 10mins!
-    link: /docs/vouch_ecosystem/Ecosystem_Overview
+      light: /image/dex-screener-vPLS-light.svg
+      dark: /image/dex-screener-vPLS-dark.svg
+      width: 300
+    title: vPLS on Dexscreener
+    details: View the PulseX vPLS/PLS pair on Dexscreener.
+    link: https://dexscreener.com/pulsechain/0x46814b3f18d90625b6e166bc2917bb64a635d797
+  - icon:
+      light: /image/dex-screener-VOUCH-light.svg
+      dark: /image/dex-screener-VOUCH-dark.svg
+      width: 300
+    title: VOUCH on Dexscreener
+    details: View the PulseX VOUCH/PLS pair on Dexscreener.
+    link: https://dexscreener.com/pulsechain/0x801C369cB1443c087Cd327DfB53AECf378F6ff85
 ---
