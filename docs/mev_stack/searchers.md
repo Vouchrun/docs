@@ -87,8 +87,18 @@ Bundle submission is allowlisted:
 | `minTimestamp` / `maxTimestamp` | Optional validity window (0 = no bound). |
 | `revertingTxHashes` | Optional. Transactions allowed to revert without invalidating the bundle. |
 
+## Back-run bundles
+
+A bundle may include a currently-pending public transaction (the **trigger**) as raw signed bytes, followed by your transaction — for example `[trigger, back-run]`. Both execute in order.
+
+- If the trigger is mined elsewhere first, the bundle fails simulation and is dropped **atomically** — your back-run cannot land without the trigger.
+- Resubmit targeting the new head; the new `blockNumber` changes the body, so it will not hit the replay guard.
+- Include the trigger **inside** the bundle to guarantee ordering — don't rely on mempool ordering.
+
 ## Limits
 
+- **Rate limit:** 30 requests per rolling 2 seconds (~15/s sustained) per IP. Beyond that you get HTTP `429` with `Retry-After` ≤ 2s. These values are current as of 2026-10 and may change — contact us if you need more headroom.
+- There is **no hard cap on the number of bundles per block** — inclusion is bounded by block gas and by competition with other bundles and mempool transactions.
 - Up to **64 transactions** per bundle.
 - Combined transaction bytes ≤ **192 KiB**; request body ≤ **256 KiB**.
 - **120-second replay window** — an exact duplicate body within 120s is rejected (`409`).
@@ -96,8 +106,16 @@ Bundle submission is allowlisted:
 
 ## PulseChain notes
 
-- Searcher bundles pay `block.coinbase` (the standard Flashbots coinbase-transfer pattern). The Vouch Builder sweeps the full coinbase delta to the proposing validator's fee recipient as the block's payment transaction.
-- PulseChain's base fee is high (roughly 500k–700k gwei), so the payment transaction's base-fee burn is ~10–15 PLS. Dust bundles whose payment is below the base-fee burn are rejected by validation.
+- The builder credits a bundle with everything it sends to `block.coinbase` — **direct transfers and priority fees both count**. Bundles compete with other bundles and mempool transactions on that value.
+- **Recommended:** the standard direct `block.coinbase` transfer — it is exact and independent of the base fee.
+- PulseChain's base fee is high (roughly 500k–700k gwei), so the payment transaction's base-fee burn is ~10–15 PLS. Payments below that will not rank and can be dropped.
+- The Vouch Builder sweeps the full coinbase delta to the proposing validator's fee recipient as the block's payment transaction.
+
+## Performance and coverage
+
+- The builder and relay run in **central Europe (Vienna, Austria)**. Submit from a host in central Europe for the lowest latency.
+- Coverage: roughly **11% of PulseChain blocks** are proposed through the Vouch relay — about 927 of ~8,400 blocks/day, with ~5,200 validators registered (~11% of the active set) as of 2026-10-13. Live numbers are on the [delivered-blocks explorer](https://boost-relay.vouch.run/mevblocks).
+- HTTP `200` means your bundle was accepted for the target block — it is **not** a guarantee of inclusion. The bundle must simulate cleanly and win the ordering against other bundles and mempool transactions.
 
 ## Support
 
