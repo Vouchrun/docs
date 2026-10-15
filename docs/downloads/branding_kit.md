@@ -23,10 +23,10 @@ The VOUCH palette is built on two brand colours — **VOUCH orange** and **VOUCH
 
 ### Brand colours
 
-| Colour | Hex | Usage |
-| --- | --- | --- |
-| <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#FF8533" stroke="#8E9397" stroke-opacity=".6"/></svg> VOUCH orange | `#FF8533` | Primary actions, current selection, key figures |
-| <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#4F8CEF" stroke="#8E9397" stroke-opacity=".6"/></svg> VOUCH blue | `#4F8CEF` | Secondary actions, Connect Wallet, links to external records |
+| Colour | Usage |
+| --- | --- |
+| <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#FF8533" stroke="#8E9397" stroke-opacity=".6"/></svg> VOUCH orange `#FF8533` | Primary actions, current selection, key figures |
+| <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#4F8CEF" stroke="#8E9397" stroke-opacity=".6"/></svg> VOUCH blue `#4F8CEF` | Secondary actions, Connect Wallet, links to external records |
 
 VOUCH orange and VOUCH blue are the same in both themes.
 
@@ -34,11 +34,11 @@ VOUCH orange and VOUCH blue are the same in both themes.
 
 | Role | Dark theme (default) | Light theme |
 | --- | --- | --- |
-| Main background | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#111111" stroke="#8E9397" stroke-opacity=".6"/></svg> `#111111` | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#EDECE3" stroke="#8E9397" stroke-opacity=".6"/></svg> `#EDECE3` |
-| Primary panels | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#1A1A1A" stroke="#8E9397" stroke-opacity=".6"/></svg> `#1A1A1A` | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#F3F3EC" stroke="#8E9397" stroke-opacity=".6"/></svg> `#F3F3EC` |
-| Secondary panels / stroke | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#333333" stroke="#8E9397" stroke-opacity=".6"/></svg> `#333333` | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#E2E0D0" stroke="#8E9397" stroke-opacity=".6"/></svg> `#E2E0D0` |
-| Primary text | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#FFFFFF" stroke="#8E9397" stroke-opacity=".6"/></svg> `#FFFFFF` | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#1B1B1F" stroke="#8E9397" stroke-opacity=".6"/></svg> `#1B1B1F` |
-| Secondary text | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#8E9397" stroke="#8E9397" stroke-opacity=".6"/></svg> `#8E9397` | <svg width="14" height="14" viewBox="0 0 14 14" style="vertical-align:-2px"><circle cx="7" cy="7" r="6.5" fill="#7D794F" stroke="#8E9397" stroke-opacity=".6"/></svg> `#7D794F` |
+| Main background | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#111111" stroke="#8E9397" stroke-opacity=".6"/></svg> `#111111` | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#EDECE3" stroke="#8E9397" stroke-opacity=".6"/></svg> `#EDECE3` |
+| Primary panels | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#1A1A1A" stroke="#8E9397" stroke-opacity=".6"/></svg> `#1A1A1A` | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#F3F3EC" stroke="#8E9397" stroke-opacity=".6"/></svg> `#F3F3EC` |
+| Secondary panels / stroke | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#333333" stroke="#8E9397" stroke-opacity=".6"/></svg> `#333333` | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#E2E0D0" stroke="#8E9397" stroke-opacity=".6"/></svg> `#E2E0D0` |
+| Primary text | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#FFFFFF" stroke="#8E9397" stroke-opacity=".6"/></svg> `#FFFFFF` | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#1B1B1F" stroke="#8E9397" stroke-opacity=".6"/></svg> `#1B1B1F` |
+| Secondary text | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#8E9397" stroke="#8E9397" stroke-opacity=".6"/></svg> `#8E9397` | <svg width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle"><circle cx="12" cy="12" r="11" fill="#7D794F" stroke="#8E9397" stroke-opacity=".6"/></svg> `#7D794F` |
 
 ### Usage rules
 
