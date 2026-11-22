@@ -142,11 +142,11 @@ under `error.data`, so you still see which builders rejected and which were unre
 | `-32005` | 503 | Storage unavailable — retry with backoff |
 | `-32006` | 502 | No builder accepted the bundle (`error.data` carries the result) |
 
-### Privacy
-
+::: warning Privacy
 Fan-out is the product: every selected builder sees the bundle, can simulate it, and may act on what
 it learns. There is no encryption, TEE or watermarking in this version. Searchers opt in to that
 trade-off in exchange for reaching more of the builder set.
+:::
 
 ### Searcher onboarding
 
