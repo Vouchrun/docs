@@ -24,13 +24,18 @@ Builders: [receive orderflow](#for-builders) by exchanging one endpoint and one 
 ```mermaid
 flowchart LR
     S[Searchers] -->|builder.vouch.run| VB[Vouch Builder]
-    S -->|builder.vouch.run/orderflow/| H[Orderflow Hub]
+    S -->|/orderflow/| H["Orderflow Hub<br/>fan-out to selected builders"]
     U[Private RPC sources] -->|/orderflow/| H
-    H -->|selected builders| B1[Vouch Builder]
-    H -->|selected builders| B2[Other builders]
+    H --> VB
+    H --> B2[Builder 2]
+    H --> B3[Builder 3]
+    H --> B4[Builder 4]
+    H --> B5[Builder 5]
     VB --> R[MEV-Relay]
-    B1 --> R
     B2 --> R
+    B3 --> R
+    B4 --> R
+    B5 --> R
     R --> V[Validators]
 ```
 
