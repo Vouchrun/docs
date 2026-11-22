@@ -4,6 +4,12 @@ A **searcher** watches the mempool for profitable opportunities (arbitrage, back
 
 On Vouch, bundles are submitted to the **Vouch Builder** — the builder behind `builder.vouch.run`. It assembles blocks from those bundles and bids through the [MEV-Relay](./mev_relay).
 
+::: tip Looking to reach more builders?
+The [Orderflow Hub](./orderflow_hub) delivers the same signed bundle to every builder your profile
+selects — same method, same signature, one path change:
+`POST https://builder.vouch.run/orderflow/`.
+:::
+
 ::: warning This is the Vouch Builder — not BlockFerret
 Bundle submission goes to the **Vouch Builder**. [BlockFerret](./blockferret) is the separate Switch.win × Vouch **alliance** builder. (Bundle submission to BlockFerret is not currently available.)
 :::
@@ -82,7 +88,7 @@ Bundle submission is allowlisted:
 | Field | Notes |
 |---|---|
 | `txs` | The signed transactions in the bundle. |
-| `blockNumber` | **Required.** An absolute target block (0x-hex or decimal). `latest`, `pending`, and `0` are rejected. |
+| `blockNumber` | **Required.** An absolute target block as 0x-hex. `latest`, `pending`, and `0` are rejected. |
 | `replacementUuid` | Optional. Replaces an earlier bundle targeting the same block. |
 | `minTimestamp` / `maxTimestamp` | Optional validity window (0 = no bound). |
 | `revertingTxHashes` | Optional. Transactions allowed to revert without invalidating the bundle. |
