@@ -96,8 +96,8 @@ There are no per-bundle protection, builder or horizon fields on this endpoint.
 - `acceptedBy` — builders that answered 2xx.
 - `rejectedBy` — builders that answered 4xx.
 - `unreachable` — timeout, transport error, circuit open, 5xx, or a builder no longer enabled.
-- `status` — `accepted` (at least one builder took it), `rejected` (only 4xx answers) or
-  `unreachable` (no accept and no clean rejection).
+- `status` — `accepted` (at least one builder took it), `rejected` (no accepts, at least one
+  clean 4xx rejection) or `unreachable` (no accepts and no clean rejections).
 
 **HTTP 200** means at least one builder accepted the bundle for your target block. It is not an
 inclusion guarantee — the bundle still has to simulate cleanly and win the block.
@@ -127,7 +127,7 @@ under `error.data`, so you still see which builders rejected and which were unre
 | Combined transaction bytes | 192 KiB |
 | Per-source rate | 2 requests/s sustained, burst 10 (ask us for more) |
 | Per-IP rate at the edge | 30 requests per 2 s |
-| Replay window | 120 s for identical bodies |
+| Duplicate body | `409` for the life of the job (7-day retention); a zero-accept retry is re-dispatched while the job is open |
 
 ### Error codes
 
@@ -139,6 +139,7 @@ under `error.data`, so you still see which builders rejected and which were unre
 | `-32001` | 401 | Authentication failed (bad signature or address not allowlisted) |
 | `-32002` | 409 | Duplicate submission |
 | `-32003` | 429 | Per-source quota exceeded |
+| `-32005` | 503 | Storage unavailable — retry with backoff |
 | `-32006` | 502 | No builder accepted the bundle (`error.data` carries the result) |
 
 ### Privacy
