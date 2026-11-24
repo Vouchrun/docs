@@ -89,7 +89,7 @@ Bundle submission is allowlisted:
 |---|---|
 | `txs` | The signed transactions in the bundle. |
 | `blockNumber` | **Required.** An absolute target block as 0x-hex. `latest`, `pending`, and `0` are rejected. |
-| `replacementUuid` | Optional. Replaces an earlier bundle targeting the same block. |
+| `replacementUuid` | Optional. Replaces an earlier bundle targeting the same block. **Direct endpoint only** — the Orderflow Hub drops the field and does not support cancel/replace. |
 | `minTimestamp` / `maxTimestamp` | Optional validity window (0 = no bound). |
 | `revertingTxHashes` | Optional. Transactions allowed to revert without invalidating the bundle. |
 
@@ -107,8 +107,8 @@ A bundle may include a currently-pending public transaction (the **trigger**) as
 - There is **no hard cap on the number of bundles per block** — inclusion is bounded by block gas and by competition with other bundles and mempool transactions.
 - Up to **64 transactions** per bundle.
 - Combined transaction bytes ≤ **192 KiB**; request body ≤ **256 KiB**.
-- **120-second replay window** — an exact duplicate body within 120s is rejected (`409`).
-- Only `eth_sendBundle` is accepted.
+- **120-second replay window** — an exact duplicate body within 120s is rejected (`409`). This is the direct endpoint's window; on [`/orderflow/`](./orderflow_hub) the guard lasts the life of the job (7 days), with a zero-accept retry exception.
+- Only `eth_sendBundle` is accepted (on `/orderflow/` too; `eth_cancelBundle` is not).
 
 ## PulseChain notes
 
