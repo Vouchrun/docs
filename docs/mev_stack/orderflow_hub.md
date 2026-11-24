@@ -121,6 +121,10 @@ under `error.data`, so you still see which builders rejected and which were unre
 - The same signed body is accepted once. A retry of an identical body after at least one builder
   accepted returns `409` (`-32002`). If the earlier attempt got **no** accepts and the job is still
   open, the same body is re-dispatched and returns a fresh result.
+- This is not the direct endpoint's 120-second window: the Hub's guard lasts the life of the job
+  (7 days). `replacementUuid` is not supported on the Hub (the field is dropped), and
+  `eth_cancelBundle` is not accepted — submit a new body for the target block instead.
+  Cancel/replace remains available on the [direct endpoint](./searchers).
 - A searcher bundle is never broadcast to the public mempool.
 
 ### Limits
@@ -133,6 +137,10 @@ under `error.data`, so you still see which builders rejected and which were unre
 | Per-source rate | 2 requests/s sustained, burst 10 (ask us for more) |
 | Per-IP rate at the edge | 30 requests per 2 s |
 | Duplicate body | `409` for the life of the job (7-day retention); a zero-accept retry is re-dispatched while the job is open |
+
+The Hub applies **no minimum bundle value**: it forwards the bundle bytes and each builder decides
+whether the value is worth including. Individual builders may set their own minimum — ask us for the
+current list.
 
 ### Error codes
 
@@ -154,6 +162,11 @@ trade-off in exchange for reaching more of the builder set.
 :::
 
 ### Searcher onboarding
+
+Builder selection is set here, by **primary builder pubkey**. A builder entry may carry extra
+attribution keys; those belong to the same entry and cannot be selected or excluded separately.
+The builders currently enabled for orderflow are the ones marked with the **orderflow** pill on
+[MevBlocks](https://boost-relay.vouch.run/mevblocks/); disabled directory entries receive nothing.
 
 1. Send your signing address to the Vouch team (see [Support](#support)). Include a signature from
    that key over a sample body if you have one ready.
