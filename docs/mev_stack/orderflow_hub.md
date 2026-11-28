@@ -161,6 +161,24 @@ it learns. There is no encryption, TEE or watermarking in this version. Searcher
 trade-off in exchange for reaching more of the builder set.
 :::
 
+### Private-RPC intake (`eth_sendRawTransaction`)
+
+A private-RPC source can also hand the hub **one raw wallet transaction** instead of a bundle. The
+hub picks the target itself (`head + 1`), applies that source's mode and window, and from then on
+the job behaves like any other: the builders receive an ordinary `eth_sendBundle` for each block of
+the window.
+
+```json
+{ "jsonrpc": "2.0", "id": 1, "method": "eth_sendRawTransaction", "params": ["0x02f8..."] }
+```
+
+- One hex string, `0x` + even length; decoded ≤ 192 KiB and request body ≤ 256 KiB.
+- The response carries `txHash` instead of `bundleHash`; the rest of the fields are the same.
+- Re-sending the same transaction returns `200` with the existing job while that job is live or
+  already on chain, not `409`; an expired job is replaced with a fresh window.
+- **Searcher sources** are rejected with `-32602` here — they stay on `eth_sendBundle`.
+- Only intake differs: builders always receive an ordinary bundle, so nothing changes on their side.
+
 ### Searcher onboarding
 
 Builder selection is set here, by **primary builder pubkey**. A builder entry may carry extra
